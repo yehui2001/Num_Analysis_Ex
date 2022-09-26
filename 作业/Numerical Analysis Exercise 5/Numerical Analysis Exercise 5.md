@@ -1,6 +1,10 @@
+
+
 # Numerical Analysis Exercise 5
 
 ###### 1. Use Gaussian elimination with partial pivoting to solve the following linear system.(手算)
+
+We can get that by dividing matrices:
 
 ```matlab
 clc;
@@ -111,7 +115,10 @@ X = 4×1
 
 ```
 
-###### 3. Find the 
+###### 3. Find the $ \left \| X \right \|_{1},\left \| X \right \|_{2},\left \| X \right \|_{\infty
+}$ norms the following vectors
+
+###### (1) $ X = (3,-4,0,\frac{3}{2})^{T}$,
 
 ```matlab
 clc;
@@ -149,6 +156,8 @@ b = 5.2202
 求得的无限范式为：
 c = 4
 ```
+
+###### (2) $ Y =(2,1,-,4)^{T} $
 
 ```matlab
 Y
