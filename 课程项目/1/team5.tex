@@ -79,6 +79,23 @@
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 
+\usepackage{listings} 
+\usepackage{xcolor}
+\lstset{
+  language=Matlab,  %代码语言使用的是matlab
+  frame=shadowbox, %把代码用带有阴影的框圈起来
+  rulesepcolor=\color{red!20!green!20!blue!20},%代码块边框为淡青色
+  keywordstyle=\color{blue!90}\bfseries, %代码关键字的颜色为蓝色，粗体
+  commentstyle=\color{red!10!green!70}\textit,    % 设置代码注释的颜色
+  showstringspaces=false,%不显示代码字符串中间的空格标记
+  numbers=left, % 显示行号
+  numberstyle=\tiny,    % 行号字体
+  stringstyle=\ttfamily, % 代码字符串的特殊格式
+  breaklines=true, %对过长的代码自动换行
+  extendedchars=false,  %解决代码跨页时，章节标题，页眉等汉字不显示的问题
+%   escapebegin=\begin{CJK*},escapeend=\end{CJK*},      % 代码中出现中文必须加上，否则报错
+  texcl=true}
+  
 %\usepackage{ctex}
 
 %----------------------------------------------------------------------------------------
@@ -125,6 +142,28 @@ y=x^7-2x^6-4x^5+3x^3+3x2
 \end{equation}
 \end{frame}
 %--------------------------------------------------
+\begin{frame}[fragile]
+\frametitle{Python Code listing in Beamer}
+The following Python code adds two numbers and display the result using \verb|print()| function:
+\rule{\textwidth}{1pt}
+\scriptsize
+\begin{lstlisting}
+    clear;
+    clc;
+    % 此为Paper中Scetion5代码
+    % 拉普拉斯矩阵如下
+    L = [2, -1, -1;
+         0,  1, -1;
+        -1,  0,  1;];
+    % Equation 18
+    syms t;
+    R = expm(-L * t);
+    R1 = limit(R, t, inf);
+    R2 = eigenVector * lefteigenVector'; 
+\end{lstlisting}
+\rule{\textwidth}{1pt}
+\end{frame}
+%--------------------------------------------------
 \begin{frame}
 \section{Problem 2}
 \frametitle{Problem 2(1)}
@@ -150,288 +189,45 @@ x_{1}^{2}+x_{2}-3 x_{3}=1
 \end{frame}
 %---------------------------------------------------
 \begin{frame}
-求解x和p的对易式，引入测试函数f(x)
-\begin{equation}
-\left[ x,p\right] f(x)=\left[ x\frac{\hbar}{i}\frac{d}{dx}(f)-\frac{\hbar}{i}\frac{d}{dx}(xf)\right]=\frac{\hbar}{i}(x\frac{df}{dx}-x\frac{df}{dx}-f)=i\hbar f(x) 
-\end{equation}
-最终可得到
-\begin{equation}
-\left[ x,p\right] =i\hbar
-\end{equation}
-上式称为正则对易关系\\
-利用该关系，(11)式可写为
-\begin{equation}
-a_{-}a_{+}=\frac{1}{\hbar\omega}H+\frac{1}{2}
-\end{equation}
-若$a_{+}$在左边，则有
-\begin{equation}
-a_{+}a_{-}=\frac{1}{\hbar\omega}H-\frac{1}{2}
-\end{equation}
-由以上两式可得
-\begin{equation}
-\left[ a_{-},a_{+}\right] =1
-\end{equation}
+\section{Problem 3}
+\frametitle{Problem 3(1)}
+Generate matrix A（50*50）and vector b（50*1) by using random number，and solve the linear system AX=b by using Gaussian partial pivoting elimination algorithm.
 
+\end{frame}
+%---------------------------------------------------
+\begin{frame}
+\frametitle{Problem 3(2)}
+Randomly generate 3 diagonal matrices (30 * 30), and use Jacobi iteration and Gauss Seidel iteration to solve them respectively. The error of the solution in terms of norm is required to be less than 1/1000. 
+\end{frame}
+%---------------------------------------------------
+\begin{frame}
+\section{Problem 4}
+\frametitle{Problem 4}
+Use appropriate polynomial interpolation to approximate the following ellipse.
+\begin{equation}
+\frac{x^{2}}{5^{2}}+\frac{y^{2}}{5^{2}}=1
+\end{equation}
+\begin{equation}
+x^{2}+y^{2}=5^{2}
+\end{equation}
 \end{frame}
 %--------------------------------------------------
 \begin{frame}
-根据(14)(15)式，我们可以将哈密顿量写为
-\begin{equation}
-H=\hbar\omega(a_{-}a_{+}-\frac{1}{2})
-\end{equation}
-和
-\begin{equation}
-H=\hbar\omega(a_{+}a_{-}+\frac{1}{2})
-\end{equation}
-利用$a_{\pm}$,可以将谐振子的薛定谔方程写成如下的形式
-\begin{equation}
-\hbar\omega(a_{\pm}a_{\mp}\pm\frac{1}{2})\psi=E\psi
-\end{equation}
+\section{Problem 5}
+\frametitle{Problem 5}
+\begin{picture}(320,250)
+\put(0,120){\includegraphics[height=2.5cm]{5.png}}
+\end{picture}
 \end{frame}
+%--------------------------------------------------
 \begin{frame}
-
-若$\psi$能够满足能量为E的薛定谔方程$H\psi=E\psi$,则$a_{+}\psi$就会满足能量为$(E+\hbar\omega)$的薛定谔方程$H(a_{+}\psi)=(E+\hbar\omega)(a_{+}\psi)$，证明如下
-\begin{equation}
-\begin{aligned}
-H(a_{+}\psi)
-&=\hbar\omega(a_{+}a_{-}+\frac{1}{2})(a_{+}\psi)\\
-&=\hbar\omega(a_{+}a_{-}a_{+}+\frac{1}{2}a_{+})\psi\\
-&=\hbar\omega a_{+}(a_{-}a_{+}+\frac{1}{2})\psi\\
-&=a_{+}\left[ \hbar\omega(a_{+}a_{-}+1+\frac{1}{2})\psi\right] \\
-&=a_{+}(H+\hbar\omega)\psi=a_{+}(E+\hbar)\psi=(E+\hbar\omega)(a_{+}\psi)
-\end{aligned}
-\end{equation}
-同理可证，$a_{-}\psi$是能量为$(E-\hbar\omega)$的解。
+\frametitle{Problem 5}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[height=2cm]{5.png}
+	%\caption{Simulation results for the network.}
+	\label{5}
+\end{figure}
 \end{frame}
-%--------------------------------------------------------
-\begin{frame}
-在上述方法中，若我们得到一个解，我们就可以通过升降能量得到其它的解，我们把$a_{\pm}$升降阶算符。\\
-如果我们反复利用升降阶算符，就会得到低于零的能量状态，这种情况并不存在，所以存在一个最低的波函数使得
-\begin{equation}
-a_{-}\psi_0=0
-\end{equation}
-利用上式我们可以确定$\psi_0(x)$
-\begin{equation}
-\psi_0(x)=(\frac{m\omega}{\pi\hbar})^{\frac{1}{4}}e^{-\frac{m\omega}{2\hbar}x^2}
-\end{equation}
-将其带入(19)式，$\hbar\omega(a_{+}a_{-}+\frac{1}{2})\psi_0=E_0\psi_0$,可以得到基态能量
-\begin{equation}
-E_0=\frac{1}{2}\hbar\omega
-\end{equation}
-\end{frame}
-%------------------------------------------------------------
-\begin{frame}
-这样我们就可以通过将升降阶算符作用于$\psi_0$,原则上能够得到谐振子的所有定态
-\begin{equation*}
-\psi_n(x)=A_n(a_{+})^n\psi_0(x)
-\end{equation*}
-\begin{equation}
-E_n=(n+\frac{1}{2})\hbar\omega
-\end{equation}
-接下来求解归一化常数$A_n$
-\end{frame}
-%---------------------------------------------------------------
-\begin{frame}
-根据上式，我们可以得知$a_{\pm}$正比于$\psi_{n\pm 1}$,即
-\begin{equation}
-a_{+}\psi_n=c_n\psi_{n+1}\quad,\quad a_{-}\psi_n=d_n\psi_{n-1}
-\end{equation}
-注意到，对于任何可积函数$f(x)$和$g(x)$
-\begin{equation}
-\int_{-\infty}^{+\infty}f^*(a_{\pm}g)dx=\int_{-\infty}^{\infty}(a_{mp}f)^*gdx
-\end{equation}
-即$a_{\mp}$是$a_{\pm}$的厄密共轭，证明如下
-\begin{equation}
-\begin{aligned}
-\int_{-\infty}^{+\infty}f^*(a_{\pm}g)dx
-&=\frac{1}{\sqrt{2\hbar m\omega}}\int_{-\infty}^{+\infty}f^*(\mp\hbar\frac{d}{dx}+m\omega x)gdx\\
-&=\frac{1}{\sqrt{2\hbar m\omega}}\int_{-\infty}^{+\infty}\left[ (\pm\hbar\frac{d}{dx}+m\omega x)f\right]^*gdx\\ 
-&=\int_{-\infty}^{+\infty}(a_{\mp}f)^*fdx
-\end{aligned}
-\end{equation}
-\end{frame}
-%-----------------------------------------------------------------
-\begin{frame}
-根据上式，特别有
-\begin{equation}
-\int_{-\infty}^{+\infty}(a_{\pm}\psi_n)^*(a_{\pm}\psi_n)dx=\int_{-\infty}^{+\infty}(a_{\mp}a_{\pm}\psi_n)^*\psi_ndx
-\end{equation}
-由(19)与(24)式可以得到
-\begin{equation}
-a_{+}a_{-}\psi_n=n\psi_n\quad,\quad a_{-}a_{+}\psi_n=(n+1)\psi_n
-\end{equation}
-所以
-\begin{equation*}
-\int_{-\infty}^{+\infty}(a_{+}\psi_n)^*(a_{+}\psi_n)dx=\left| c_n\right|^2\int_{-\infty}^{+\infty}\left| \psi_{n+1}\right|^2dx=(n+1)\int_{-\infty}^{+\infty}\left| \psi_n\right|^2 dx  
-\end{equation*}
-\begin{equation}
-\int_{-\infty}^{+\infty}(a_{-}\psi_n)^*(a_{-}\psi_n)dx=\left| d_n\right|^2\int_{-\infty}^{+\infty}\left| \psi_{n-1}\right|^2dx=n\int_{-\infty}^{+\infty}\left| \psi_n\right|^2  dx 
-\end{equation}
-\end{frame}
-\begin{frame}
-根据上式可以得到$c_n$与$d_n$,即
-\begin{equation}
-a_{+}\psi_n=\sqrt{n+1}\psi_{n+1}\quad a_{-}\psi_n=\sqrt{n}\psi_{n-1}
-\end{equation}
-这样就有
-$$\psi_1=a_{+}\psi_0$$
-$$\psi_2=\frac{1}{\sqrt{2}}a_{+}\psi_1=\frac{1}{\sqrt{2}}(a_{+})^2\psi_0$$
-$$\psi_3=\frac{1}{\sqrt{3}}a_{+}\psi_2=\frac{1}{\sqrt{3\times 2}}(a_{+})^3\psi_0$$
-$$\psi_4=\frac{1}{\sqrt{4}}a_{+}\psi_3=\frac{1}{\sqrt{4\times3\times 2}}(a_{+})^4\psi_0$$
-依此类推
-\begin{equation}
-\psi_{n}=\frac{1}{\sqrt{n!}}(a_{+})^n\psi_0
-\end{equation}
-\end{frame}
-%----------------------------------------------------------------
-\section{解析法}
-\begin{frame}
-\frametitle{解析法}
-回到谐振子的薛定谔方程
-\begin{equation*}
--\frac{\hbar^2}{2m}\frac{d^2\psi}{dx^2}+\frac{1}{2}m\omega^2x^2\psi=E\psi
-\end{equation*}
-引入无量纲变量
-\begin{equation}
-\xi\equiv\sqrt{\frac{m\omega}{\hbar}}x
-\end{equation}
-此时，薛定谔方程可以写为
-\begin{equation}
-\frac{d^2\psi}{d\xi^2}=(\xi^2-K)\psi
-\end{equation}
-其中
-\begin{equation}
-K\equiv\frac{2E}{\hbar\omega}
-\end{equation}
-\end{frame}
-%------------------------------------------------
-\begin{frame}
-若$\xi$很大，则可以略去含K的项，即在这样的区域里
-\begin{equation}
-\frac{d^2\psi}{d\xi^2}\approx\xi^2\psi
-\end{equation}
-其近似解
-\begin{equation}
-\psi(\xi)\approx Ae^{-\frac{\xi^2}{2}}+Be^{\frac{\xi^2}{2}}
-\end{equation}
-含B的项不能归一化，所以，物理上可接受的解具有的渐进形式为
-\begin{equation}
-\psi(\xi)=h(\xi)e^{-\frac{\xi^2}{2}}
-\end{equation}
-\end{frame}
-%-------------------------------------------------
-\begin{frame}
-对上式求导
-$$\frac{d\psi}{d\xi}=(\frac{dh}{d\xi}-\xi h)e^{-\frac{\xi^2}{2}}$$
-$$\frac{d^2\psi}{d\xi^2}=(\frac{d^2h}{d\xi^2}-2\xi\frac{dh}{d\xi}+(\xi^2-1)h)e^{-\frac{\xi^2}{2}}$$
-薛定谔方程变为
-\begin{equation}
-\frac{d^2h}{d\xi^2}-2\xi\frac{dh}{d\xi}+(K-1)h=0
-\end{equation}
-现在来寻求上式的$\xi$幂级数解
-\end{frame}
-%-----------------------------------------------------
-\begin{frame}
-\begin{equation}
-h(\xi)=a_0+a_1\xi+a_2\xi^2+\cdots=\sum_{j=0}^{\infty}a_j\xi^j
-\end{equation}
-对该级数逐项求导
-$$\frac{dh}{d\xi}=a_1+2a_2\xi+3a_3\xi^2+\cdots+\cdots=\sum_{j=0}^{\infty}ja_J\xi^{j-1}$$
-$$\frac{d^2h}{d\xi^2}=2a_2+2\times3a_3\xi+3\times4a_4\xi^2+\cdots=\sum_{j=0}^{\infty}(j+1)(j+2)a_{j+2}\xi^j$$
-将这些带入(39)式，可得
-\begin{equation}
-\sum_{j=0}^{\infty}\left[ (j+1)(j+2)a_{j+2}-2ja_{j}+(K-1)a_j \right]\xi^j=0
-\end{equation}
-\end{frame}
-%-------------------------------------------------------
-\begin{frame}
-要使上式成立，由幂级数展开的唯一性，每一个$\xi$幂次前的系数必须为零
-$$(j+1)(j+2)a_{j+2}-2ja_j+(K-1)a_j=0$$
-因此
-\begin{equation}
-a_{j+2}=\frac{(2j+1-K)}{(j+1)(j+2)}a_j
-\end{equation}
-这个递推公式完全等价于薛定谔方程，从$a_0$开始，可以给出所有的偶系数
-$$a_2=\frac{(1-K)}{2}a_0,a_4=\frac{5-K}{12}a_2=\frac{(5-K)(1-K)}{24}a_1,\cdots$$
-从$a_1$开始，可以给出所有的奇系数
-$$a_3=\frac{(3-K)}{6}a_1,a_5=\frac{7-K}{20}a_3=\frac{(7-K)(3-K)}{120}a_1,\cdots$$
-\end{frame}
-%-------------------------------------------------------------
-\begin{frame}
-完整的解可以写为
-\begin{equation}
-h(\xi)=h_{even}(\xi)+h_{odd}(\xi)
-\end{equation}
-其中
-$$h_{even}(\xi)\equiv a_0+a_2\xi^2+a_4\xi^4+\cdots$$
-$$h_{odd}(\xi)\equiv a_1\xi+a_3\xi^3+a_5\xi^5+\cdots$$
-对于非常大的j，递推公式变为
-\begin{equation}
-a_{j+2}\approx\frac{2}{j}a_j
-\end{equation}
-其近似解为
-\begin{equation}
-a_j\approx\frac{C}{(j/2)!}
-\end{equation}
-\end{frame}
-%-------------------------------------------------------------------
-\begin{frame}
-在这种情况下将导致
-\begin{equation}
-h(\xi)\approx C \sum\frac{1}{\frac{j}{2}!}\xi^j\approx C\sum\frac{1}{j!}\xi^{2j}\approx e^{\xi^2}
-\end{equation}
-此时，根据(38)式，$\psi$的行为就是$e^{\frac{\xi^2}{2}}$,无法归一化，我们令最大的$j=n$,要得到可接受的解，要求
-\begin{equation}
-K=2n+1
-\end{equation}
-并且当$n$为偶数时，$a_1=0$,当$n$为奇数时，$a_0=0$\\
-根据(35)式，我们可以知道能量必须是
-$$E_n=(n+\frac{1}{2})\hbar\omega\quad n=1,2,\cdots$$
-\end{frame}
-%----------------------------------------------------------------------
-\begin{frame}
-对允许的K值,递推公式为
-\begin{equation}
-a_{j+2}=\frac{-2(n-j)}{(j+1)(j+2)}a_j
-\end{equation}
-当n=0时
-$$h_0(\xi)=a_0$$
-$$\psi_0(\xi)=a_0e^{-\frac{\xi^2}{2}}$$
-当n=1时
-$$h_1(\xi)=a_1\xi$$
-$$\psi_1(\xi)=a_1\xi e^{\frac{-\xi^2}{2}}$$
-当n=2时
-$$h_2(\xi)=a_0(1-2\xi^2)$$
-$$\psi_2(\xi)=a_0(1-2\xi^2)e^{\frac{-\xi^2}{2}}$$
-\end{frame}
-%--------------------------------------------------------------------
-\begin{frame}
-引入厄密多项式$H_n(\xi)$,下列为厄密多项式的前几项
-\begin{equation}
-\begin{aligned}
-&H_0=1\\
-&H_1=2\xi\\
-&H_2=4\xi^2-2\\
-&H_3=8\xi^3-12\xi\\
-&H_4=16\xi^4-48\xi^2+12\\
-&H_5=32\xi^5-160\xi^3+120\xi
-\end{aligned}
-\end{equation}
-
-\end{frame}
-\begin{frame}
-厄密多项式的罗德里格公式
-\begin{equation}
-H_n(\xi)=(-1)^ne^{\xi^{2}}(\frac{d}{d\xi})^ne^{-\xi^{2}}
-\end{equation}
-厄密多项式的递推关系
-\begin{equation}
-H_{n+1}(\xi)=2\xi H_n(\xi)-2nH_{n-1}(\xi)
-\end{equation}
-此时,归一化的谐振子定态是
-\begin{equation}
-\psi_{n}(x)=(\frac{m\omega}{\pi\hbar})^{\frac{1}{4}}\frac{1}{\sqrt{2^nn!}}H_n(\xi)e^{-\frac{\xi^2}{2}}
-\end{equation}
-\end{frame}
-
+%--------------------------------------------------
 \end{document}
