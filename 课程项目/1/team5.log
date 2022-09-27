@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.9.26)  26 SEP 2022 13:34
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.9.26)  27 SEP 2022 00:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -888,34 +888,24 @@ LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
 (Font)              Font shape `TU/lmss/m/sl' tried instead on input line 102.
 [1
 
+] (./team5.toc
+Missing character: There is no 解 (U+89E3) in font [lmsans10-regular]:mapping=te
+x-text;!
+Missing character: There is no 析 (U+6790) in font [lmsans10-regular]:mapping=te
+x-text;!
+Missing character: There is no 法 (U+6CD5) in font [lmsans10-regular]:mapping=te
+x-text;!
+)
+Missing character: There is no 目 (U+76EE) in font [lmsans12-regular]:mapping=te
+x-text;!
+Missing character: There is no 录 (U+5F55) in font [lmsans12-regular]:mapping=te
+x-text;!
+[2
+
+] [3
+
 ]
-Missing character: There is no 由 (U+7531) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 胡 (U+80E1) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 克 (U+514B) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 定 (U+5B9A) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 律 (U+5F8B) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 可 (U+53EF) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 得 (U+5F97) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 经 (U+7ECF) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 典 (U+5178) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 谐 (U+8C10) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 振 (U+632F) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 子 (U+5B50) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 模 (U+6A21) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 型 (U+578B) in font [lmsans10-regular]:mapping=te
+Missing character: There is no ， (U+FF0C) in font [lmsans10-regular]:mapping=te
 x-text;!
 LaTeX Font Info:    Trying to load font information for U+msa on input line 126
 .
@@ -932,394 +922,17 @@ LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10.95> not available
 (Font)              Font shape `TU/lmss/m/sl' tried instead on input line 126.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
 (Font)              Font shape `TU/lmss/m/sl' tried instead on input line 126.
-
-Missing character: There is no 其 (U+5176) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 解 (U+89E3) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 为 (U+4E3A) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 其 (U+5176) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 中 (U+4E2D) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 为 (U+4E3A) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 谐 (U+8C10) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 振 (U+632F) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 子 (U+5B50) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 的 (U+7684) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 角 (U+89D2) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 频 (U+9891) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 率 (U+7387) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no ， (U+FF0C) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 可 (U+53EF) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 得 (U+5F97) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 势 (U+52BF) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 能 (U+80FD) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 为 (U+4E3A) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 同 (U+540C) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 时 (U+65F6) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 上 (U+4E0A) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 式 (U+5F0F) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 也 (U+4E5F) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 为 (U+4E3A) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 量 (U+91CF) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 子 (U+5B50) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 力 (U+529B) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 学 (U+5B66) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 问 (U+95EE) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 题 (U+9898) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 要 (U+8981) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 求 (U+6C42) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 解 (U+89E3) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 的 (U+7684) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 势 (U+52BF) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 能 (U+80FD) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no ， (U+FF0C) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 即 (U+5373) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 求 (U+6C42) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 解 (U+89E3) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 的 (U+7684) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 薛 (U+859B) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 定 (U+5B9A) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 谔 (U+8C14) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 方 (U+65B9) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 程 (U+7A0B) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 为 (U+4E3A) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 放 (U+653E) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 假 (U+5047) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 啊 (U+554A) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 点 (U+70B9) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 上 (U+4E0A) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 课 (U+8BFE) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 呢 (U+5462) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 热 (U+70ED) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 搜 (U+641C) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 刚 (U+521A) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 回 (U+56DE) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 家 (U+5BB6) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 啊 (U+554A) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 虽 (U+867D) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 然 (U+7136) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 离 (U+79BB) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 开 (U+5F00) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 嘎 (U+560E) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 的 (U+7684) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 时 (U+65F6) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 间 (U+95F4) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 管 (U+7BA1) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 理 (U+7406) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 的 (U+7684) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 撒 (U+6492) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 反 (U+53CD) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 馈 (U+9988) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no ； (U+FF1B) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 加 (U+52A0) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 管 (U+7BA1) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 理 (U+7406) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 的 (U+7684) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 撒 (U+6492) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 开 (U+5F00) in font [lmsans12-regular]:mapping=te
-x-text;!
-[2
-
-] (./team5.toc
-Missing character: There is no 代 (U+4EE3) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 数 (U+6570) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 法 (U+6CD5) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 解 (U+89E3) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 析 (U+6790) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 法 (U+6CD5) in font [lmsans10-regular]:mapping=te
-x-text;!
-)
-Missing character: There is no 目 (U+76EE) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 录 (U+5F55) in font [lmsans12-regular]:mapping=te
-x-text;!
-[3
+ [4
 
 ]
-Missing character: There is no 将 (U+5C06) in font [lmsans10-regular]:mapping=te
+Missing character: There is no ： (U+FF1A) in font [lmsans10-regular]:mapping=te
 x-text;!
-Missing character: There is no 式 (U+5F0F) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 写 (U+5199) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 成 (U+6210) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 下 (U+4E0B) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 面 (U+9762) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 的 (U+7684) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 形 (U+5F62) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 式 (U+5F0F) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 如 (U+5982) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 何 (U+4F55) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 求 (U+6C42) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 解 (U+89E3) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 上 (U+4E0A) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 面 (U+9762) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 的 (U+7684) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 方 (U+65B9) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 程 (U+7A0B) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no ， (U+FF0C) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 基 (U+57FA) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 本 (U+672C) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 的 (U+7684) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 思 (U+601D) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 想 (U+60F3) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 就 (U+5C31) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 是 (U+662F) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 分 (U+5206) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 解 (U+89E3) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 哈 (U+54C8) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 密 (U+5BC6) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 顿 (U+987F) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 算 (U+7B97) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 符 (U+7B26) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 引 (U+5F15) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 入 (U+5165) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 以 (U+4EE5) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 下 (U+4E0B) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 变 (U+53D8) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 量 (U+91CF) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 代 (U+4EE3) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 数 (U+6570) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 法 (U+6CD5) in font [lmsans12-regular]:mapping=te
-x-text;!
-Missing character: There is no 代 (U+4EE3) in font [lmsans8-regular]:mapping=tex
--text;!
-Missing character: There is no 数 (U+6570) in font [lmsans8-regular]:mapping=tex
--text;!
-Missing character: There is no 法 (U+6CD5) in font [lmsans8-regular]:mapping=tex
--text;!
-[4
-
-]
-Missing character: There is no 计 (U+8BA1) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 算 (U+7B97) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 的 (U+7684) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 乘 (U+4E58) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 积 (U+79EF) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 其 (U+5176) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 中 (U+4E2D) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 有 (U+6709) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 一 (U+4E00) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 个 (U+4E2A) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 额 (U+989D) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 外 (U+5916) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 的 (U+7684) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 项 (U+9879) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no ， (U+FF0C) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 涉 (U+6D89) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 及 (U+53CA) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 到 (U+5230) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 我 (U+6211) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 们 (U+4EEC) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 称 (U+79F0) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 其 (U+5176) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 为 (U+4E3A) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 与 (U+4E0E) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 的 (U+7684) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 对 (U+5BF9) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 易 (U+6613) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 式 (U+5F0F) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 。 (U+3002) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 一 (U+4E00) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 般 (U+822C) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 情 (U+60C5) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 况 (U+51B5) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no ， (U+FF0C) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 算 (U+7B97) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 符 (U+7B26) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 和 (U+548C) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 的 (U+7684) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 对 (U+5BF9) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 易 (U+6613) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 式 (U+5F0F) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 是 (U+662F) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 这 (U+8FD9) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 样 (U+6837) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no ， (U+FF0C) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 式 (U+5F0F) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 可 (U+53EF) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 表 (U+8868) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 示 (U+793A) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 为 (U+4E3A) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no 代 (U+4EE3) in font [lmsans8-regular]:mapping=tex
--text;!
-Missing character: There is no 数 (U+6570) in font [lmsans8-regular]:mapping=tex
--text;!
-Missing character: There is no 法 (U+6CD5) in font [lmsans8-regular]:mapping=tex
--text;!
 [5
+
+]
+Missing character: There is no ： (U+FF1A) in font [lmsans10-regular]:mapping=te
+x-text;!
+[6
 
 ]
 Missing character: There is no 求 (U+6C42) in font [lmsans10-regular]:mapping=te
@@ -1428,13 +1041,7 @@ Missing character: There is no 可 (U+53EF) in font [lmsans10-regular]:mapping=t
 x-text;!
 Missing character: There is no 得 (U+5F97) in font [lmsans10-regular]:mapping=te
 x-text;!
-Missing character: There is no 代 (U+4EE3) in font [lmsans8-regular]:mapping=tex
--text;!
-Missing character: There is no 数 (U+6570) in font [lmsans8-regular]:mapping=tex
--text;!
-Missing character: There is no 法 (U+6CD5) in font [lmsans8-regular]:mapping=tex
--text;!
-[6
+[7
 
 ]
 Missing character: There is no 根 (U+6839) in font [lmsans10-regular]:mapping=te
@@ -1511,13 +1118,7 @@ Missing character: There is no 形 (U+5F62) in font [lmsans10-regular]:mapping=t
 x-text;!
 Missing character: There is no 式 (U+5F0F) in font [lmsans10-regular]:mapping=te
 x-text;!
-Missing character: There is no 代 (U+4EE3) in font [lmsans8-regular]:mapping=tex
--text;!
-Missing character: There is no 数 (U+6570) in font [lmsans8-regular]:mapping=tex
--text;!
-Missing character: There is no 法 (U+6CD5) in font [lmsans8-regular]:mapping=tex
--text;!
-[7
+[8
 
 ]
 Missing character: There is no 若 (U+82E5) in font [lmsans10-regular]:mapping=te
@@ -1610,13 +1211,7 @@ Missing character: There is no 解 (U+89E3) in font [lmsans10-regular]:mapping=t
 x-text;!
 Missing character: There is no 。 (U+3002) in font [lmsans10-regular]:mapping=te
 x-text;!
-Missing character: There is no 代 (U+4EE3) in font [lmsans8-regular]:mapping=tex
--text;!
-Missing character: There is no 数 (U+6570) in font [lmsans8-regular]:mapping=tex
--text;!
-Missing character: There is no 法 (U+6CD5) in font [lmsans8-regular]:mapping=tex
--text;!
-[8
+[9
 
 ]
 Missing character: There is no 在 (U+5728) in font [lmsans10-regular]:mapping=te
@@ -1853,13 +1448,7 @@ Missing character: There is no 能 (U+80FD) in font [lmsans10-regular]:mapping=t
 x-text;!
 Missing character: There is no 量 (U+91CF) in font [lmsans10-regular]:mapping=te
 x-text;!
-Missing character: There is no 代 (U+4EE3) in font [lmsans8-regular]:mapping=tex
--text;!
-Missing character: There is no 数 (U+6570) in font [lmsans8-regular]:mapping=tex
--text;!
-Missing character: There is no 法 (U+6CD5) in font [lmsans8-regular]:mapping=tex
--text;!
-[9
+[10
 
 ]
 Missing character: There is no 这 (U+8FD9) in font [lmsans10-regular]:mapping=te
@@ -1948,13 +1537,7 @@ Missing character: There is no 常 (U+5E38) in font [lmsans10-regular]:mapping=t
 x-text;!
 Missing character: There is no 数 (U+6570) in font [lmsans10-regular]:mapping=te
 x-text;!
-Missing character: There is no 代 (U+4EE3) in font [lmsans8-regular]:mapping=tex
--text;!
-Missing character: There is no 数 (U+6570) in font [lmsans8-regular]:mapping=tex
--text;!
-Missing character: There is no 法 (U+6CD5) in font [lmsans8-regular]:mapping=tex
--text;!
-[10
+[11
 
 ]
 Missing character: There is no 根 (U+6839) in font [lmsans10-regular]:mapping=te
@@ -2037,13 +1620,7 @@ Missing character: There is no 如 (U+5982) in font [lmsans10-regular]:mapping=t
 x-text;!
 Missing character: There is no 下 (U+4E0B) in font [lmsans10-regular]:mapping=te
 x-text;!
-Missing character: There is no 代 (U+4EE3) in font [lmsans8-regular]:mapping=tex
--text;!
-Missing character: There is no 数 (U+6570) in font [lmsans8-regular]:mapping=tex
--text;!
-Missing character: There is no 法 (U+6CD5) in font [lmsans8-regular]:mapping=tex
--text;!
-[11
+[12
 
 ]
 Missing character: There is no 根 (U+6839) in font [lmsans10-regular]:mapping=te
@@ -2080,13 +1657,7 @@ Missing character: There is no 所 (U+6240) in font [lmsans10-regular]:mapping=t
 x-text;!
 Missing character: There is no 以 (U+4EE5) in font [lmsans10-regular]:mapping=te
 x-text;!
-Missing character: There is no 代 (U+4EE3) in font [lmsans8-regular]:mapping=tex
--text;!
-Missing character: There is no 数 (U+6570) in font [lmsans8-regular]:mapping=tex
--text;!
-Missing character: There is no 法 (U+6CD5) in font [lmsans8-regular]:mapping=tex
--text;!
-[12
+[13
 
 ]
 Missing character: There is no 根 (U+6839) in font [lmsans10-regular]:mapping=te
@@ -2125,13 +1696,7 @@ Missing character: There is no 类 (U+7C7B) in font [lmsans10-regular]:mapping=t
 x-text;!
 Missing character: There is no 推 (U+63A8) in font [lmsans10-regular]:mapping=te
 x-text;!
-Missing character: There is no 代 (U+4EE3) in font [lmsans8-regular]:mapping=tex
--text;!
-Missing character: There is no 数 (U+6570) in font [lmsans8-regular]:mapping=tex
--text;!
-Missing character: There is no 法 (U+6CD5) in font [lmsans8-regular]:mapping=tex
--text;!
-[13
+[14
 
 ]
 Missing character: There is no 回 (U+56DE) in font [lmsans10-regular]:mapping=te
@@ -2210,7 +1775,7 @@ Missing character: There is no 析 (U+6790) in font [lmsans8-regular]:mapping=te
 -text;!
 Missing character: There is no 法 (U+6CD5) in font [lmsans8-regular]:mapping=tex
 -text;!
-[14
+[15
 
 ]
 Missing character: There is no 若 (U+82E5) in font [lmsans10-regular]:mapping=te
@@ -2325,7 +1890,7 @@ Missing character: There is no 析 (U+6790) in font [lmsans8-regular]:mapping=te
 -text;!
 Missing character: There is no 法 (U+6CD5) in font [lmsans8-regular]:mapping=tex
 -text;!
-[15
+[16
 
 ]
 Missing character: There is no 对 (U+5BF9) in font [lmsans10-regular]:mapping=te
@@ -2382,7 +1947,7 @@ Missing character: There is no 析 (U+6790) in font [lmsans8-regular]:mapping=te
 -text;!
 Missing character: There is no 法 (U+6CD5) in font [lmsans8-regular]:mapping=tex
 -text;!
-[16
+[17
 
 ]
 Missing character: There is no 对 (U+5BF9) in font [lmsans10-regular]:mapping=te
@@ -2425,7 +1990,7 @@ Missing character: There is no 析 (U+6790) in font [lmsans8-regular]:mapping=te
 -text;!
 Missing character: There is no 法 (U+6CD5) in font [lmsans8-regular]:mapping=tex
 -text;!
-[17
+[18
 
 ]
 Missing character: There is no 要 (U+8981) in font [lmsans10-regular]:mapping=te
@@ -2590,7 +2155,7 @@ Missing character: There is no 析 (U+6790) in font [lmsans8-regular]:mapping=te
 -text;!
 Missing character: There is no 法 (U+6CD5) in font [lmsans8-regular]:mapping=tex
 -text;!
-[18
+[19
 
 ]
 Missing character: There is no 完 (U+5B8C) in font [lmsans10-regular]:mapping=te
@@ -2655,7 +2220,7 @@ Missing character: There is no 析 (U+6790) in font [lmsans8-regular]:mapping=te
 -text;!
 Missing character: There is no 法 (U+6CD5) in font [lmsans8-regular]:mapping=tex
 -text;!
-[19
+[20
 
 ]
 Missing character: There is no 在 (U+5728) in font [lmsans10-regular]:mapping=te
@@ -2810,7 +2375,7 @@ Missing character: There is no 析 (U+6790) in font [lmsans8-regular]:mapping=te
 -text;!
 Missing character: There is no 法 (U+6CD5) in font [lmsans8-regular]:mapping=tex
 -text;!
-[20
+[21
 
 ]
 Missing character: There is no 对 (U+5BF9) in font [lmsans10-regular]:mapping=te
@@ -2851,7 +2416,7 @@ Missing character: There is no 析 (U+6790) in font [lmsans8-regular]:mapping=te
 -text;!
 Missing character: There is no 法 (U+6CD5) in font [lmsans8-regular]:mapping=tex
 -text;!
-[21
+[22
 
 ]
 Missing character: There is no 引 (U+5F15) in font [lmsans10-regular]:mapping=te
@@ -2898,7 +2463,7 @@ Missing character: There is no 析 (U+6790) in font [lmsans8-regular]:mapping=te
 -text;!
 Missing character: There is no 法 (U+6CD5) in font [lmsans8-regular]:mapping=tex
 -text;!
-[22
+[23
 
 ]
 Missing character: There is no 厄 (U+5384) in font [lmsans10-regular]:mapping=te
@@ -2975,7 +2540,7 @@ Missing character: There is no 析 (U+6790) in font [lmsans8-regular]:mapping=te
 -text;!
 Missing character: There is no 法 (U+6CD5) in font [lmsans8-regular]:mapping=tex
 -text;!
-[23
+[24
 
 ]
 \tf@nav=\write6
@@ -2989,15 +2554,15 @@ Missing character: There is no 法 (U+6CD5) in font [lmsans8-regular]:mapping=te
 
  (./team5.aux)
 Package rerunfilecheck Info: File `team5.out' has not changed.
-(rerunfilecheck)             Checksum: 08897A2AB44F14179629C322B470B0CC;134.
+(rerunfilecheck)             Checksum: 146AC04ADFC42D0CC75B7D0DDAE2C111;249.
  ) 
 Here is how much of TeX's memory you used:
- 21648 strings out of 476179
- 428468 string characters out of 5809544
- 706552 words of memory out of 5000000
- 41936 multiletter control sequences out of 15000+600000
+ 21654 strings out of 476179
+ 428526 string characters out of 5809544
+ 705733 words of memory out of 5000000
+ 41942 multiletter control sequences out of 15000+600000
  474344 words of font info for 56 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,15n,122p,418b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on team5.pdf (23 pages).
+Output written on team5.pdf (24 pages).

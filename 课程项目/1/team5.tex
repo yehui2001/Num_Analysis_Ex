@@ -85,7 +85,7 @@
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
 
-\title[Numerical Analysis]{Team 5 Presentation Bowowa} % The short title appears at the bottom of every slide, the full title is only on the title page
+\title[Numerical Analysis]{Team Presentation} % The short title appears at the bottom of every slide, the full title is only on the title page
 
 \author{Team 5} % Your name
 \institute[QUT-Math] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
@@ -102,70 +102,51 @@ Qingdao University of Technology \\ % Your institution for the title page
 \end{frame}
 %------------------------------------------------------------------------
 \begin{frame}
-\frametitle{放假啊点上课呢热搜刚回家啊虽然离开嘎的时间管理的撒反馈；加管理的撒开}
-由胡克定律可得经典谐振子模型
-\begin{equation}
-F=-kx=m\frac{d^2x}{dt^2}
-\end{equation}
-其解为
-\begin{equation}
-x(t)=Asin(\omega t)+Bcos(\omega t)
-\end{equation}
-其中
-\begin{equation}
-\omega \equiv \sqrt{\frac{k}{m}}
-\end{equation}
-为谐振子的角频率，可得势能为
-\begin{equation}
-V(x)=\frac{1}{2}m\omega^2 x^2
-\end{equation}
-同时上式也为量子力学问题要求解的势能，即求解的薛定谔方程为
-\begin{equation}
--\frac{\hbar^2}{2m}\frac{d^2\psi}{dx^2}+\frac{1}{2}m\omega^2x^2\psi=E\psi
-\end{equation}
-\end{frame}
-%------------------------------------------------------------------------
-\begin{frame}
 	\frametitle{目录} % Table of contents slide, comment this block out to remove it
 	\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
 \end{frame}
-\section{代数法}
+%------------------------------------------------------------------------
+\begin{frame}
+\section{Problem 1}
+\frametitle{Problem 1}
+Design two nonlinear algebraic equations (degree at least 5 , with no less than 3 zeros) and find all their zeros (error less than 0.001),show your result and Matlab or Python code.
+\end{frame}
 %--------------------------------------------------------------------
 \begin{frame}
-\frametitle{代数法}
-将(5)式写成下面的形式
-\begin{equation}
-\frac{1}{2m}\left[ p^2+(m\omega x)^2\right]\psi=E\psi 
-\end{equation}
-如何求解上面的方程，基本的思想就是分解哈密顿算符
-\begin{equation}
-H=\frac{1}{2m}\left[ p^2+(m\omega x)^2\right] 
-\end{equation}
-引入以下变量
-\begin{equation}
-a_{\pm}\equiv\frac{1}{\sqrt{2\hbar m\omega}}(\mp ip+m\omega x)
-\end{equation}
+\frametitle{Problem 1 Solution}
+First, draw the graph of the higher degree equation of one variable，then find the approximate interval between zero, Finally, the binary method is used to determine the value of zero.
 
+Following are our target functions:
+\begin{equation}
+y=x^6+x^4-3x^5-2x^3+4x^2
+\end{equation}
+\begin{equation}
+y=x^7-2x^6-4x^5+3x^3+3x2
+\end{equation}
 \end{frame}
 %--------------------------------------------------
 \begin{frame}
-计算$a_{-}a_{+}$的乘积
+\section{Problem 2}
+\frametitle{Problem 2(1)}
+Find the numerical solution of the following nonlinear equations using iteration method and Newton method respectively and show your analysis of error by using norms of vector and matrix and demonstrate your computer code：
 \begin{equation}
-\begin{aligned}
-a_{-}a_{+}
-&=\frac{1}{2\hbar m\omega}(ip+m\omega x)(-ip+m\omega x)\\
-&=\frac{1}{2\hbar m\omega}\left[ p^2+(m\omega x)^2-im\omega(xp-px)\right] 
-\end{aligned}
+\left\{\begin{array}{l}
+x_{1}^{2}-10 x_{1}+x_{2}^{2}+8=0 \\
+x_{1} x_{2}^{2}+x_{1}-12 x_{2}+7=0
+\end{array}\right.
 \end{equation}
-其中有一个额外的项，涉及到$(xp-px)$,我们称其为x与p的对易式。一般情况，算符A和B的对易式是
+\end{frame}
+%--------------------------------------------------
+\begin{frame}
+\frametitle{Problem 2(2)}
+Find the numerical solution of the following nonlinear equations using iteration method and Newton method respectively and show your analysis of error by using norms of vector and matrix and demonstrate your computer code：
 \begin{equation}
-\left[ A,B\right]=AB-BA 
+\left\{\begin{array}{l}
+5x_{1}-x_{2}^{2}+x_{1}x_{3}=2 \\
+x_{1} x_{3}+4 x_{2}-x_{3}=0 \\
+x_{1}^{2}+x_{2}-3 x_{3}=1
+\end{array}\right.
 \end{equation}
-这样，(9)式可表示为
-\begin{equation}
-a_{-}a_{+}=\frac{1}{2\hbar m\omega}\left[ p^2+(m\omega x)^2\right] -\frac{i}{2\hbar}\left[ x,p\right]  
-\end{equation}
-
 \end{frame}
 %---------------------------------------------------
 \begin{frame}
