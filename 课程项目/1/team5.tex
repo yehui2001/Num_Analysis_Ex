@@ -79,22 +79,30 @@
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 
-\usepackage{listings} 
-\usepackage{xcolor}
-\lstset{
-  language=Matlab,  %代码语言使用的是matlab
-  frame=shadowbox, %把代码用带有阴影的框圈起来
-  rulesepcolor=\color{red!20!green!20!blue!20},%代码块边框为淡青色
-  keywordstyle=\color{blue!90}\bfseries, %代码关键字的颜色为蓝色，粗体
-  commentstyle=\color{red!10!green!70}\textit,    % 设置代码注释的颜色
-  showstringspaces=false,%不显示代码字符串中间的空格标记
-  numbers=left, % 显示行号
-  numberstyle=\tiny,    % 行号字体
-  stringstyle=\ttfamily, % 代码字符串的特殊格式
-  breaklines=true, %对过长的代码自动换行
-  extendedchars=false,  %解决代码跨页时，章节标题，页眉等汉字不显示的问题
-%   escapebegin=\begin{CJK*},escapeend=\end{CJK*},      % 代码中出现中文必须加上，否则报错
-  texcl=true}
+\usepackage{listings}
+\usepackage{fontspec} % 定制字体
+\newfontfamily\menlo{Menlo}
+\usepackage{xcolor} % 定制颜色
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+backgroundcolor=\color{white},      % choose the background color
+basicstyle=\footnotesize\ttfamily,  % size of fonts used for the code
+columns=fullflexible,
+tabsize=4,
+breaklines=true,               % automatic line breaking only at whitespace
+captionpos=b,                  % sets the caption-position to bottom
+commentstyle=\color{mygreen},  % comment style
+escapeinside={\%*}{*)},        % if you want to add LaTeX within your code
+keywordstyle=\color{blue},     % keyword style
+stringstyle=\color{mymauve}\ttfamily,  % string literal style
+%frame=shadowbox,
+rulesepcolor=\color{red!20!green!20!blue!20},
+ identifierstyle=\color{red},
+language=c++,
+}
   
 %\usepackage{ctex}
 
@@ -138,30 +146,60 @@ Following are our target functions:
 y=x^6+x^4-3x^5-2x^3+4x^2
 \end{equation}
 \begin{equation}
-y=x^7-2x^6-4x^5+3x^3+3x2
+y=x^7-2x^6-4x^5+3x^3+3x^2
 \end{equation}
 \end{frame}
 %--------------------------------------------------
 \begin{frame}[fragile]
-\frametitle{Python Code listing in Beamer}
-The following Python code adds two numbers and display the result using \verb|print()| function:
-\rule{\textwidth}{1pt}
-\scriptsize
-\begin{lstlisting}
-    clear;
-    clc;
-    % 此为Paper中Scetion5代码
-    % 拉普拉斯矩阵如下
-    L = [2, -1, -1;
-         0,  1, -1;
-        -1,  0,  1;];
-    % Equation 18
-    syms t;
-    R = expm(-L * t);
-    R1 = limit(R, t, inf);
-    R2 = eigenVector * lefteigenVector'; 
+\frametitle{Problem 1 Matlab Code}
+%\rule{\textwidth}{1pt}
+%\begin{block}{MATLAB}
+\begin{lstlisting}[language={matlab},
+                   numberstyle=\tiny\menlo,
+                   basicstyle=\small\menlo]
+function r=bisect(a,b,accurate)
+p=(a+b)/2;
+error=b-a;
+n=0;
+while (error>accurate)
+    n=n+1;
+    if fun(p)==0
+      break;    
+          else if fun(a)*fun(p)<0
+            b=p;
+        else
+            a=p;
+              end
+        p=(a+b)/2;
+        error=(b-a)/2^2;
+    end
+        r=p;
+end end
 \end{lstlisting}
-\rule{\textwidth}{1pt}
+%\end{block}
+%\rule{\textwidth}{1pt}
+\end{frame}
+%--------------------------------------------------
+\begin{frame}
+\frametitle{Problem 1 Solution}
+By using bisection algorithm, we got the approximation of the function's root:
+\begin{figure}[htbp]
+	\centering
+	\begin{minipage}{0.49\linewidth}
+		\centering
+		\includegraphics[height=0.6\linewidth]{11.png}
+		\caption{$y=x^6+x^4-3x^5-2x^3+4x^2$}
+		\label{chutian1}%文中引用该图片代号
+	\end{minipage}
+	%\qquad
+	\begin{minipage}{0.49\linewidth}
+		\centering
+		\includegraphics[height=0.6\linewidth]{12.png}
+		\caption{$y=x^7-2x^6-4x^5+3x^3+3x^2$}
+		\label{chutian2}%文中引用该图片代号
+	\end{minipage}
+\end{figure}
+
 \end{frame}
 %--------------------------------------------------
 \begin{frame}

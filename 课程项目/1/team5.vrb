@@ -1,19 +1,27 @@
-\frametitle{Python Code listing in Beamer}
-The following Python code adds two numbers and display the result using \verb|print()| function:
-\rule{\textwidth}{1pt}
-\scriptsize
-\begin{lstlisting}
-    clear;
-    clc;
-    % 此为Paper中Scetion5代码
-    % 拉普拉斯矩阵如下
-    L = [2, -1, -1;
-         0,  1, -1;
-        -1,  0,  1;];
-    % Equation 18
-    syms t;
-    R = expm(-L * t);
-    R1 = limit(R, t, inf);
-    R2 = eigenVector * lefteigenVector';
+\frametitle{Problem 1 Matlab Code}
+%\rule{\textwidth}{1pt}
+%\begin{block}{MATLAB}
+\begin{lstlisting}[language={matlab},
+                   numberstyle=\tiny\menlo,
+                   basicstyle=\small\menlo]
+function r=bisect(a,b,accurate)
+p=(a+b)/2;
+error=b-a;
+n=0;
+while (error>accurate)
+    n=n+1;
+    if fun(p)==0
+      break;
+          else if fun(a)*fun(p)<0
+            b=p;
+        else
+            a=p;
+              end
+        p=(a+b)/2;
+        error=(b-a)/2^2;
+    end
+        r=p;
+end end
 \end{lstlisting}
-\rule{\textwidth}{1pt}
+%\end{block}
+%\rule{\textwidth}{1pt}
