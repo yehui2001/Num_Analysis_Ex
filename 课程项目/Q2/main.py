@@ -25,14 +25,13 @@ import seaborn as sns
 sns.set_style('darkgrid')
 
 max_iteration = 100
-acc = 1e-20
+acc = 1e-10
 
 x = np.zeros([max_iteration, 2], dtype='float64')
 err = np.zeros(max_iteration - 1, dtype='float64')
-distance = 1
-idx = 1
-x[0, 0] = 2
-x[0, 1] = 0
+distance = 1;idx = 1
+x[0, 0] = 1
+x[0, 1] = 1
 while(distance > acc):
     if(idx < max_iteration):
         x[idx, 0] = ((x[idx - 1, 0])**2 + (x[idx - 1, 1])**2 + 8) / 10

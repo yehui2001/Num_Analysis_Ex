@@ -20,27 +20,37 @@
 \headcommand {\beamer@framepages {7}{7}}
 \headcommand {\slideentry {2}{0}{1}{8/8}{}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@sectionpages {1}{8}}
-\headcommand {\beamer@subsectionpages {1}{8}}
-\headcommand {\sectionentry {3}{Problem 3}{9}{Problem 3}{0}}
-\headcommand {\slideentry {3}{0}{0}{9/9}{}{0}}
+\headcommand {\slideentry {2}{0}{2}{9/9}{}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {3}{0}{1}{10/10}{}{0}}
+\headcommand {\slideentry {2}{0}{3}{10/10}{}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\beamer@sectionpages {1}{10}}
-\headcommand {\beamer@subsectionpages {1}{10}}
-\headcommand {\sectionentry {4}{Problem 4}{11}{Problem 4}{0}}
-\headcommand {\slideentry {4}{0}{0}{11/11}{}{0}}
+\headcommand {\slideentry {2}{0}{4}{11/11}{}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\beamer@sectionpages {1}{11}}
-\headcommand {\beamer@subsectionpages {1}{11}}
-\headcommand {\sectionentry {5}{Problem 5}{12}{Problem 5}{0}}
-\headcommand {\slideentry {5}{0}{0}{12/12}{}{0}}
+\headcommand {\slideentry {2}{0}{5}{12/12}{}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {5}{0}{1}{13/13}{}{0}}
+\headcommand {\slideentry {2}{0}{6}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\beamer@partpages {1}{13}}
-\headcommand {\beamer@subsectionpages {1}{13}}
 \headcommand {\beamer@sectionpages {1}{13}}
-\headcommand {\beamer@documentpages {13}}
-\headcommand {\gdef \inserttotalframenumber {13}}
+\headcommand {\beamer@subsectionpages {1}{13}}
+\headcommand {\sectionentry {3}{Problem 3}{14}{Problem 3}{0}}
+\headcommand {\slideentry {3}{0}{0}{14/14}{}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\slideentry {3}{0}{1}{15/15}{}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\beamer@sectionpages {1}{15}}
+\headcommand {\beamer@subsectionpages {1}{15}}
+\headcommand {\sectionentry {4}{Problem 4}{16}{Problem 4}{0}}
+\headcommand {\slideentry {4}{0}{0}{16/16}{}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\beamer@sectionpages {1}{16}}
+\headcommand {\beamer@subsectionpages {1}{16}}
+\headcommand {\sectionentry {5}{Problem 5}{17}{Problem 5}{0}}
+\headcommand {\slideentry {5}{0}{0}{17/17}{}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\slideentry {5}{0}{1}{18/18}{}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\beamer@partpages {1}{18}}
+\headcommand {\beamer@subsectionpages {1}{18}}
+\headcommand {\beamer@sectionpages {1}{18}}
+\headcommand {\beamer@documentpages {18}}
+\headcommand {\gdef \inserttotalframenumber {18}}

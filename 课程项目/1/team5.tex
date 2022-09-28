@@ -101,7 +101,7 @@ stringstyle=\color{mymauve}\ttfamily,  % string literal style
 %frame=shadowbox,
 rulesepcolor=\color{red!20!green!20!blue!20},
  identifierstyle=\color{red},
-language=c++,
+%language=c++,
 }
   
 %\usepackage{ctex}
@@ -159,8 +159,7 @@ y=x^7-2x^6-4x^5+3x^3+3x^2
                    basicstyle=\small\menlo]
 function r=bisect(a,b,accurate)
 p=(a+b)/2;
-error=b-a;
-n=0;
+error=b-a;n=0;
 while (error>accurate)
     n=n+1;
     if fun(p)==0
@@ -212,6 +211,113 @@ x_{1}^{2}-10 x_{1}+x_{2}^{2}+8=0 \\
 x_{1} x_{2}^{2}+x_{1}-12 x_{2}+7=0
 \end{array}\right.
 \end{equation}
+\end{frame}
+%--------------------------------------------------
+\begin{frame}[fragile]
+\frametitle{Problem 2(1) Fixed-Point Python Code}
+%\rule{\textwidth}{1pt}
+\begin{block}{Python}
+\begin{lstlisting}[language={python},
+                   numberstyle=\tiny\menlo,
+                   basicstyle=\small\menlo]
+x = np.zeros([max_iteration, 2], dtype='float64')
+err = np.zeros(max_iteration - 1, dtype='float64')
+distance = 1;idx = 1;x[0, 0] = 1;x[0, 1] = 1
+while(distance > acc):
+    if(idx < max_iteration):
+        x[idx, 0] = ((x[idx - 1, 0])**2 + (x[idx - 1, 1])**2 + 8) / 10
+        x[idx, 1] = (x[idx - 1, 0] + (x[idx - 1, 0] * x[idx - 1, 1])**2 + 7) / 12
+        distance = (x[idx - 1, 0] - x[idx, 0])**2 + (x[idx - 1, 1] - x[idx, 1])**2
+        err[idx - 1] = distance
+        idx = idx + 1 
+    else:
+        break  
+\end{lstlisting}
+\end{block}
+%\rule{\textwidth}{1pt}
+\end{frame}
+%--------------------------------------------------
+\begin{frame}
+\frametitle{Problem 2(1)}
+In a very extreme condition like in a tolerance of $1\times 10^{-20}$, the fixed-point iteration took about 20 times to reach the target.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[height=5cm]{err.png}
+	\caption{Fixed-Point Iteration Result}
+	\label{2(1)}
+\end{figure}
+\end{frame}
+%--------------------------------------------------
+\begin{frame}[fragile]
+\frametitle{Problem 2(1) Newton-Raphson Matlab Code}
+%\rule{\textwidth}{1pt}
+\begin{block}{MATLAB}
+\begin{lstlisting}[language={matlab},
+                   numberstyle=\tiny\menlo,
+                   basicstyle=\small\menlo]
+syms x1 x2;
+f1(x1,x2) = x1^2 - 10*x1 + x2^2 + 8;
+f2(x1,x2) = x1*x2^2 + x1 - 12*x2 + 7;
+F(x1,x2) = [f1;f2];x_solve(:,1) = [1;1];
+J(x1,x2) = jacobian(F,[x1 x2]);
+dx_Nr =[0;0];
+for i = 1:N
+    dx_Nr(:,i) = J(x_solve(1,i),x_solve(2,i))\(-F(x_solve(1,i),x_solve(2,i)));
+    if(sqrt(sum(dx_Nr(:,i).^2)) < epsilon)
+        x_solve(:,i+1) = x_solve(:,i) + dx_Nr(:,i);
+        break;
+    else
+        x_solve(:,i+1) = x_solve(:,i) + dx_Nr(:,i);
+    end end
+\end{lstlisting}
+\end{block}
+%\rule{\textwidth}{1pt}
+\end{frame}
+%--------------------------------------------------
+\begin{frame}
+\frametitle{Problem 1 Solution}
+Using programing tools, we got the root of this given nonlinear system. In the tolerance of $1\times 10^-10$, the two method showed a very different performance. Newton-Raphson iteration converge in  incredible speed which only took 4 times to get a trustable root.
+\begin{equation}
+\left\{\begin{matrix} 
+  x_1=0.936680033263737 \\  
+  x_2=0.699593344681334 
+\end{matrix}\right. 
+\end{equation}
+\begin{figure}[htbp]
+	\centering
+	\begin{minipage}{0.49\linewidth}
+		\centering
+		\includegraphics[height=0.4\linewidth]{err copy.png}
+		\caption{Fixed-Point Iteration}
+	\end{minipage}
+	%\qquad
+	\begin{minipage}{0.49\linewidth}
+		\centering
+		\includegraphics[height=0.4\linewidth]{N.png}
+		\caption{Newton-Raphson Iteration}
+	\end{minipage}
+\end{figure}
+
+\end{frame}
+%--------------------------------------------------
+\begin{frame}
+\frametitle{Problem 1 Solution}
+Using programing tools, we got the root of this given nonlinear system. In the tolerance of $1\times 10^-10$, the two method showed a very different performance. Newton-Raphson iteration converge in  incredible speed which only took 4 times to get a trustable root.
+\begin{figure}[htbp]
+	\centering
+	\begin{minipage}{0.49\linewidth}
+		\centering
+		\includegraphics[height=0.7\linewidth]{err copy.png}
+		\caption{Fixed-Point Iteration}
+	\end{minipage}
+	%\qquad
+	\begin{minipage}{0.49\linewidth}
+		\centering
+		\includegraphics[height=0.7\linewidth]{N.png}
+		\caption{Newton-Raphson Iteration}
+	\end{minipage}
+\end{figure}
+
 \end{frame}
 %--------------------------------------------------
 \begin{frame}
