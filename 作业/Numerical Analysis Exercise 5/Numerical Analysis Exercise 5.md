@@ -37,7 +37,12 @@ x_{1}+x_{2} ㅤ ㅤㅤㅤㅤㅤ  =5 \\
   2x_{1}-x_{2}+5x_{3} ㅤㅤㅤㅤ=-9\\
  ㅤㅤ 3x_{2}-4x_{3}+2x_{4} ㅤ=19\\
   ㅤㅤㅤㅤㅤㅤ2x_{3}+6x_{4}=2
-\end{matrix}\right. 
+\end{matrix}\right.
+
+
+
+
+
 $$
 
 ```matlab
@@ -115,9 +120,7 @@ X = 4×1
 
 ```
 
-###### 3. Find the $ \left \| X \right \|_{1},\left \| X \right \|_{2},\left \| X \right \|_{\infty
-}$ norms the following vectors
-
+###### 3. Find the $ \left \| X \right \|_{1},\left \| X \right \|_{2},\left \| X \right \|_{\infty}$ norms the following vectors
 ###### (1) $ X = (3,-4,0,\frac{3}{2})^{T}$,
 
 ```matlab
