@@ -2,7 +2,7 @@
 
 # Numerical Analysis Exercise 5
 
-###### 1. Use Gaussian elimination with partial pivoting to solve the following linear system.(手算)
+##### 1. Use Gaussian elimination with partial pivoting to solve the following linear system.(手算)
 
 We can get that by dividing matrices:
 
@@ -29,7 +29,7 @@ X = 3×1
 
 
 
-###### 2. Solve the following linear system by using Chasing method(refer to "追赶法.PPT")
+##### 2. Solve the following linear system by using Chasing method(refer to "追赶法.PPT")
 
 $$
 \left\{\begin{matrix} 
@@ -41,8 +41,6 @@ x_{1}+x_{2} ㅤ ㅤㅤㅤㅤㅤ  =5 \\
 
 
 
-
-
 $$
 
 ```matlab
@@ -120,7 +118,7 @@ X = 4×1
 
 ```
 
-###### 3. Find the $ \left \| X \right \|_{1},\left \| X \right \|_{2},\left \| X \right \|_{\infty}$ norms the following vectors
+##### 3. Find the $ \left \| X \right \|_{1},\left \| X \right \|_{2},\left \| X \right \|_{\infty}$ norms the following vectors
 ###### (1) $ X = (3,-4,0,\frac{3}{2})^{T}$,
 
 ```matlab
