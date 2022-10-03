@@ -78,31 +78,6 @@
 
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
-
-\usepackage{listings}
-\usepackage{fontspec} % 定制字体
-\newfontfamily\menlo{Menlo}
-\usepackage{xcolor} % 定制颜色
-\definecolor{mygreen}{rgb}{0,0.6,0}
-\definecolor{mygray}{rgb}{0.5,0.5,0.5}
-\definecolor{mymauve}{rgb}{0.58,0,0.82}
-
-\lstset{ %
-backgroundcolor=\color{white},      % choose the background color
-basicstyle=\footnotesize\ttfamily,  % size of fonts used for the code
-columns=fullflexible,
-tabsize=4,
-breaklines=true,               % automatic line breaking only at whitespace
-captionpos=b,                  % sets the caption-position to bottom
-commentstyle=\color{mygreen},  % comment style
-escapeinside={\%*}{*)},        % if you want to add LaTeX within your code
-keywordstyle=\color{blue},     % keyword style
-stringstyle=\color{mymauve}\ttfamily,  % string literal style
-%frame=shadowbox,
-rulesepcolor=\color{red!20!green!20!blue!20},
- identifierstyle=\color{red},
-%language=c++,
-}
   
 %\usepackage{ctex}
 
@@ -154,27 +129,10 @@ y=x^7-2x^6-4x^5+3x^3+3x^2
 \frametitle{Problem 1 Matlab Code}
 %\rule{\textwidth}{1pt}
 %\begin{block}{MATLAB}
-\begin{lstlisting}[language={matlab},
-                   numberstyle=\tiny\menlo,
-                   basicstyle=\small\menlo]
-function r=bisect(a,b,accurate)
-p=(a+b)/2;
-error=b-a;n=0;
-while (error>accurate)
-    n=n+1;
-    if fun(p)==0
-      break;    
-          else if fun(a)*fun(p)<0
-            b=p;
-        else
-            a=p;
-              end
-        p=(a+b)/2;
-        error=(b-a)/2^2;
-    end
-        r=p;
-end end
-\end{lstlisting}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[height=7cm]{q1.png}
+\end{figure}
 %\end{block}
 %\rule{\textwidth}{1pt}
 \end{frame}
@@ -216,24 +174,12 @@ x_{1} x_{2}^{2}+x_{1}-12 x_{2}+7=0
 \begin{frame}[fragile]
 \frametitle{Problem 2(1) Fixed-Point Python Code}
 %\rule{\textwidth}{1pt}
-\begin{block}{Python}
-\begin{lstlisting}[language={python},
-                   numberstyle=\tiny\menlo,
-                   basicstyle=\small\menlo]
-x = np.zeros([max_iteration, 2], dtype='float64')
-err = np.zeros(max_iteration - 1, dtype='float64')
-distance = 1;idx = 1;x[0, 0] = 1;x[0, 1] = 1
-while(distance > acc):
-    if(idx < max_iteration):
-        x[idx, 0] = ((x[idx - 1, 0])**2 + (x[idx - 1, 1])**2 + 8) / 10
-        x[idx, 1] = (x[idx - 1, 0] + (x[idx - 1, 0] * x[idx - 1, 1])**2 + 7) / 12
-        distance = (x[idx - 1, 0] - x[idx, 0])**2 + (x[idx - 1, 1] - x[idx, 1])**2
-        err[idx - 1] = distance
-        idx = idx + 1 
-    else:
-        break  
-\end{lstlisting}
-\end{block}
+%\begin{block}{Python}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[height=4.5cm]{q2(1)python.png}
+\end{figure}
+%\end{block}
 %\rule{\textwidth}{1pt}
 \end{frame}
 %--------------------------------------------------
@@ -251,26 +197,10 @@ In a very extreme condition like in a tolerance of $1\times 10^{-20}$, the fixed
 \begin{frame}[fragile]
 \frametitle{Problem 2(1) Newton-Raphson Matlab Code}
 %\rule{\textwidth}{1pt}
-\begin{block}{MATLAB}
-\begin{lstlisting}[language={matlab},
-                   numberstyle=\tiny\menlo,
-                   basicstyle=\small\menlo]
-syms x1 x2;
-f1(x1,x2) = x1^2 - 10*x1 + x2^2 + 8;
-f2(x1,x2) = x1*x2^2 + x1 - 12*x2 + 7;
-F(x1,x2) = [f1;f2];x_solve(:,1) = [1;1];
-J(x1,x2) = jacobian(F,[x1 x2]);
-dx_Nr =[0;0];
-for i = 1:N
-    dx_Nr(:,i) = J(x_solve(1,i),x_solve(2,i))\(-F(x_solve(1,i),x_solve(2,i)));
-    if(sqrt(sum(dx_Nr(:,i).^2)) < epsilon)
-        x_solve(:,i+1) = x_solve(:,i) + dx_Nr(:,i);
-        break;
-    else
-        x_solve(:,i+1) = x_solve(:,i) + dx_Nr(:,i);
-    end end
-\end{lstlisting}
-\end{block}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[height=5cm]{q2(1)matlab.png}
+\end{figure}
 %\rule{\textwidth}{1pt}
 \end{frame}
 %--------------------------------------------------
