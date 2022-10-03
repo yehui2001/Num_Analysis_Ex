@@ -359,7 +359,7 @@ $$
 \begin{aligned}
 x_{1}+x_{2}-2x_{3}&=1 \\
 x_{1}+x_{2}+x_{3}&=1\\
-2x_{1}+2x_{2}x_{3}&=1.
+2x_{1}+2x_{2}+x_{3}&=1.
 \end{aligned}
 \end{equation}
 \end{matrix}\right.
