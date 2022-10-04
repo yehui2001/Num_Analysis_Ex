@@ -170,6 +170,33 @@ x_{1} x_{2}^{2}+x_{1}-12 x_{2}+7=0
 \end{array}\right.
 \end{equation}
 \end{frame}
+%---------------------------------------------------
+\begin{frame}
+\frametitle{Problem 2(1) Solution}
+By using $\Delta X^{(k)}=X^{(k+1)}-X^{(k)}$,
+
+we had 
+\begin{equation}
+X^{(1)}=\Delta X^{(0)}+X^{(0)}=\left(\begin{array}{c}
+0.470588 \\
+0 \\
+-0.352941
+\end{array}\right)
+\end{equation}
+
+The rest can be done in the same manner. Following are each iteration result.
+
+\begin{table}[]
+\begin{tabular}{lllll}
+\hline
+      & 1         & 2         & 3         & 4       \\ \hline
+$x_1$ & 0.470588  & 0.423831  & 0.424716  & 0.4247  \\
+$x_2$ & 0         & -0.042279 & -0.041371 & -0.0413 \\
+$x_3$ & -0.352941 & -0.288278 & -0.286962 & -0.2870 \\ \hline
+\end{tabular}
+\end{table}
+
+\end{frame}
 %--------------------------------------------------
 \begin{frame}[fragile]
 \frametitle{Problem 2(1) Fixed-Point Python Code}
@@ -340,7 +367,7 @@ By using norms of vector and matrix, here exists
 \frac{\partial f_{1}}{\partial x_{1}} & \frac{\partial f_{1}}{\partial x_{2}} & \frac{\partial f_{1}}{\partial x_{3}} \\
 \frac{\partial f_{2}}{\partial x_{1}} & \frac{\partial f_{2}}{\partial x_{2}} & \frac{\partial f_{2}}{\partial x_{3}} \\
 \frac{\partial f_{3}}{\partial x_{1}} & \frac{\partial f_{3}}{\partial x_{2}} & \frac{\partial f_{3}}{\partial x_{3}}
-\end{array}\right\| \wedge \mathrm{n}\left\|X^{(1)} X^{(0)}\right\|,
+\end{array}\right\| \wedge \mathrm{n}\left\|X^{(1)} - X^{(0)}\right\|,
 \end{equation}
 
 and we got
@@ -350,7 +377,7 @@ and we got
 \frac{\partial f_{1}}{\partial x_{1}} & \frac{\partial f_{1}}{\partial x_{2}} & \frac{\partial f_{1}}{\partial x_{3}} \\
 \frac{\partial f_{2}}{\partial x_{1}} & \frac{\partial f_{2}}{\partial x_{2}} & \frac{\partial f_{2}}{\partial x_{3}} \\
 \frac{\partial f_{3}}{\partial x_{1}} & \frac{\partial f_{3}}{\partial x_{2}} & \frac{\partial f_{3}}{\partial x_{3}}
-\end{array}\right\| \wedge 4\left\|X^{(1)} X^{(0)}\right\| \leq 10^{-5}
+\end{array}\right\| \wedge 4\left\|X^{(1)} - X^{(0)}\right\| \leq 10^{-5}
 \end{eqnarray}
 
 
@@ -367,13 +394,33 @@ and we got
 \begin{frame}
 \section{Problem 3}
 \frametitle{Problem 3(1)}
-Generate matrix A（50*50）and vector b（50*1) by using random number，and solve the linear system AX=b by using Gaussian partial pivoting elimination algorithm.
+Generate matrix $A(50\times 50)$ and vector $b(50\times 1)$ by using random number，and solve the linear system $AX=b$ by using Gaussian partial pivoting elimination algorithm.
 
 \end{frame}
 %---------------------------------------------------
 \begin{frame}
 \frametitle{Problem 3(2)}
 Randomly generate 3 diagonal matrices (30 * 30), and use Jacobi iteration and Gauss Seidel iteration to solve them respectively. The error of the solution in terms of norm is required to be less than 1/1000. 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[height=3cm]{q3(2).png}
+\end{figure}
+\end{frame}
+%---------------------------------------------------
+\begin{frame}
+\frametitle{Problem 3(2) Jacobi Matlab Code}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[height=7.2cm]{q3(2)1.png}
+\end{figure}
+\end{frame}
+%---------------------------------------------------
+\begin{frame}
+\frametitle{Problem 3(2) Gauss-Deidel Matlab Code}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[height=7.2cm]{q3(2)2.png}
+\end{figure}
 \end{frame}
 %---------------------------------------------------
 \begin{frame}
