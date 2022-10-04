@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.9.26)  4 OCT 2022 20:48
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.9.26)  4 OCT 2022 21:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1302,9 +1302,40 @@ Overfull \vbox (31.98912pt too high) detected at line 935
 [80
 
 ]
-File: 5.png Graphic file (type bmp)
-<5.png>
+File: 111.png Graphic file (type bmp)
+<111.png>
+File: 22.png Graphic file (type bmp)
+<22.png>
+File: 33.png Graphic file (type bmp)
+<33.png>
  [81
+
+]
+File: 44.png Graphic file (type bmp)
+<44.png>
+File: 55.png Graphic file (type bmp)
+<55.png>
+ [82
+
+]
+File: q51.png Graphic file (type bmp)
+<q51.png>
+ [83
+
+]
+File: q52.png Graphic file (type bmp)
+<q52.png>
+ [84
+
+]
+File: q53.png Graphic file (type bmp)
+<q53.png>
+ [85
+
+]
+File: q54.png Graphic file (type bmp)
+<q54.png>
+ [86
 
 ]
 \tf@nav=\write6
@@ -1317,19 +1348,16 @@ File: 5.png Graphic file (type bmp)
 \openout8 = `team5.snm'.
 
  (./team5.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `team5.out' has not changed.
 (rerunfilecheck)             Checksum: E262DE4A7BC05C0B7C502A0811C92A4C;455.
  ) 
 Here is how much of TeX's memory you used:
- 22361 strings out of 476179
- 438633 string characters out of 5809544
- 716344 words of memory out of 5000000
- 42565 multiletter control sequences out of 15000+600000
+ 22442 strings out of 476179
+ 439522 string characters out of 5809544
+ 716891 words of memory out of 5000000
+ 42640 multiletter control sequences out of 15000+600000
  477012 words of font info for 75 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,15n,122p,418b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on team5.pdf (81 pages).
+Output written on team5.pdf (86 pages).
