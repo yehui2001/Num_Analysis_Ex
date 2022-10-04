@@ -263,6 +263,108 @@ x_{1}^{2}+x_{2}-3 x_{3}=1
 \end{frame}
 %---------------------------------------------------
 \begin{frame}
+\frametitle{Problem 2(2) Solution}
+
+We let $\mathrm{X}=\left(\begin{array}{l}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right)$
+and
+$\mathrm{F}(\mathrm{X})=\left(\begin{array}{c}
+5 x_{1}-x_{2}^{2}+x_{1} x_{3}-2 \\
+x_{1} x_{3}+4 x_{2}-x_{3} \\
+x_{1}^{2}+x_{2}-3 x_{3}-1
+\end{array}\right)$.
+So the Jacobian matrix of $F(X)$ eqauls to
+\begin{equation}
+\left(\begin{array}{ccc}
+5+x_{3} & -2 x_{2} & x_{1} \\
+x_{3} & 4 & -1 \\
+2 x_{1} & 1 & -3
+\end{array}\right)
+\end{equation}
+\end{frame}
+%---------------------------------------------------
+\begin{frame}
+\frametitle{Problem 2(2) Solution}
+At first we guess  $X^{(0)}=\left(\begin{array}{l}1 \\ 0 \\ 0\end{array}\right)$ , 
+
+so we got  $\left.\mathrm{F}(X^{(0)}\right)=\left(\begin{array}{l}3 \\ 0 \\ 0\end{array}\right)$, $\mathrm{J}\left(X^{(0)}\right)=\left(\begin{array}{ccc}
+0 & 0 & 1 \\
+0 & 4 & -1 \\
+2 & 1 & -3
+\end{array}\right)$. 
+
+By using  $\mathrm{J}\left(X^{(n)}\right) \Delta X^{(n)}=-\mathrm{F}\left(X^{(n)}\right)$ , 
+
+we have  $\left(\begin{array}{ccc}0 & 0 & 1 \\ 0 & 4 & -1 \\ 2 & 1 & -3\end{array}\right) \Delta X^{(0)}=\left(\begin{array}{l}3 \\ 0 \\ 0\end{array}\right)$.
+
+Thus, the solution is  $\Delta X^{(0)}=\left(\begin{array}{c}-0.439412 \\ 0 \\ -0.352941\end{array}\right) $.
+
+\end{frame}
+%---------------------------------------------------
+\begin{frame}
+\frametitle{Problem 2(2) Solution}
+Next,by using $\Delta X^{(k)}=X^{(k+1)}-X^{(k)}$,
+
+we had 
+\begin{equation}
+X^{(1)}=\Delta X^{(0)}+X^{(0)}=\left(\begin{array}{c}
+0.470588 \\
+0 \\
+-0.352941
+\end{array}\right)
+\end{equation}
+
+The rest can be done in the same manner. Following are each iteration result.
+
+\begin{table}[]
+\begin{tabular}{lllll}
+\hline
+      & 1         & 2         & 3         & 4       \\ \hline
+$x_1$ & 0.470588  & 0.423831  & 0.424716  & 0.4247  \\
+$x_2$ & 0         & -0.042279 & -0.041371 & -0.0413 \\
+$x_3$ & -0.352941 & -0.288278 & -0.286962 & -0.2870 \\ \hline
+\end{tabular}
+\end{table}
+
+\end{frame}
+%---------------------------------------------------
+\begin{frame}
+\frametitle{Problem 2(2) Solution}
+By using norms of vector and matrix, here exists
+
+\begin{equation}
+\left\|X^{(n)}-X^{(0)}\right\| \leq\left\|\begin{array}{lll}
+\frac{\partial f_{1}}{\partial x_{1}} & \frac{\partial f_{1}}{\partial x_{2}} & \frac{\partial f_{1}}{\partial x_{3}} \\
+\frac{\partial f_{2}}{\partial x_{1}} & \frac{\partial f_{2}}{\partial x_{2}} & \frac{\partial f_{2}}{\partial x_{3}} \\
+\frac{\partial f_{3}}{\partial x_{1}} & \frac{\partial f_{3}}{\partial x_{2}} & \frac{\partial f_{3}}{\partial x_{3}}
+\end{array}\right\| \wedge \mathrm{n}\left\|X^{(1)} X^{(0)}\right\|,
+\end{equation}
+
+and we got
+
+\begin{eqnarray}
+\left\|X^{(4)}-X^{(0)}\right\| \leq\left\|\begin{array}{lll}
+\frac{\partial f_{1}}{\partial x_{1}} & \frac{\partial f_{1}}{\partial x_{2}} & \frac{\partial f_{1}}{\partial x_{3}} \\
+\frac{\partial f_{2}}{\partial x_{1}} & \frac{\partial f_{2}}{\partial x_{2}} & \frac{\partial f_{2}}{\partial x_{3}} \\
+\frac{\partial f_{3}}{\partial x_{1}} & \frac{\partial f_{3}}{\partial x_{2}} & \frac{\partial f_{3}}{\partial x_{3}}
+\end{array}\right\| \wedge 4\left\|X^{(1)} X^{(0)}\right\| \leq 10^{-5}
+\end{eqnarray}
+
+
+\end{frame}
+%---------------------------------------------------
+\begin{frame}
+\frametitle{Problem 2(2) Matlab Code}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[height=7cm]{q2(2).png}
+\end{figure}
+\end{frame}
+%---------------------------------------------------
+\begin{frame}
 \section{Problem 3}
 \frametitle{Problem 3(1)}
 Generate matrix A（50*50）and vector b（50*1) by using random number，and solve the linear system AX=b by using Gaussian partial pivoting elimination algorithm.
