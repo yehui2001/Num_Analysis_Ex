@@ -5,15 +5,14 @@
 <center><p align="left"></p> <font size=5 > <b>Team_7</b> </font> <center>
 
 
-
 <center><p align="left"></p> <font size=5 > <b>主讲人：王玉佩，吴旭文</b> </font> <center>
+
 ## Question 1
 
 ### 1.1
 
 ​		Design two nonlinear algebraic equations (degree at least 5 , with no less than 3 zeros) and find all their zeros (error less than 0.001).
 So,we firstly design the quintic algebric equations as follows.
-
 
 $$
 \begin{equation}
@@ -29,9 +28,9 @@ $$
 
 ​		we use the Matlab to print the figure of the equation. 
 
-![y1](G:\Numercial Analysis Exercise\Num_Analysis_Ex\课程项目\Q1\y1.png)
+![y1](https://pic1.imgdb.cn/item/6342e6a416f2c2beb154cf1b.png)
 
-![](G:\Numercial Analysis Exercise\Num_Analysis_Ex\课程项目\Q1\y2.png)
+![](https://pic1.imgdb.cn/item/6342e6c116f2c2beb155101e.png)
 
 ### 1.2
 
@@ -86,7 +85,7 @@ end
 
 ​	 We take the derivative of the function, we get the first derivative of the function, and then we determine whether the zero at the first derivative is zero, and if it's zero, then it's the second zero, and so on.
 
-<img src="G:\Numercial Analysis Exercise\Num_Analysis_Ex\课程项目\Q1\dy.png" alt="dy" style="zoom: 80%;" />
+<img src="https://pic1.imgdb.cn/item/6342e6cf16f2c2beb155359b.png" alt="dy" style="zoom: 100%;" />
 
 | $zeros$ | -5.0000 | -3.0000 | -2.5000 | 4.0000 |
 | ------- | ------- | ------- | ------- | ------ |
@@ -459,7 +458,7 @@ xx2=spline(y_i,x2,yy_i);
 plot(xx_i,yy1,xx_i,yy2,xx1,yy_i,xx2,yy_i);
 ```
 
-<img src="G:\Numercial Analysis Exercise\Num_Analysis_Ex\课程项目\Other\圆.png" alt="圆" style="zoom:15%;" />
+<img src="https://pic1.imgdb.cn/item/6339a58816f2c2beb184d367.png" alt="圆" style="zoom:15%;" />
 
 
 
@@ -505,7 +504,7 @@ rho=2.*(1-sin(theta));
 end
 ```
 
-<img src="G:\Numercial Analysis Exercise\Num_Analysis_Ex\课程项目\Other\心脏线.png" alt="心脏线" style="zoom:15%;" />
+<img src="https://pic1.imgdb.cn/item/6339a6d816f2c2beb187a711.png" alt="心脏线" style="zoom:15%;" />
 
 ## Question 5
 
@@ -513,9 +512,19 @@ end
 
 ​	原始矩阵如下：
 
-![img](https://pics2.baidu.com/feed/cb8065380cd79123d75d6cc6c37cb68ab3b78090.png@f_auto?token=25e2e668ae51685e4eba1525cbe39528)
+<div>			<!--块级封装-->
+    <center>	<!--将图片和文字居中-->
+    <img src="https://pics2.baidu.com/feed/cb8065380cd79123d75d6cc6c37cb68ab3b78090.png@f_auto?token=25e2e668ae51685e4eba1525cbe39528"
+         alt="无法显示图片"
+         style="zoom:100%"/>
+    <br>		<!--换行-->
+    	<!--标题-->
+    </center>
+</div>
 
-​		《九章算术》里记载的第一步变换是“以 右行上禾，遍乘中行”，也就是用右列第一项的数字 3，去乘中间那列的每一项。 乘过以后，原始矩阵变换如下:
+
+
+《九章算术》里记载的第一步变换是“以 右行上禾，遍乘中行”，也就是用右列第一项的数字 3，去乘中间那列的每一项。 乘过以后，原始矩阵变换如下:
 
 <div>			<!--块级封装-->
     <center>	<!--将图片和文字居中-->
@@ -526,16 +535,45 @@ end
     	<!--标题-->
     </center>
 </div>
+​		然后让中列每一项减去右列对应项的某个常数倍（这里取 2 倍），矩阵变换成：
 
-​		然后让中列每一项减去右列对应项的某个常数倍（这里取 2 倍），矩阵变换成：																		![img](https://pics5.baidu.com/feed/8644ebf81a4c510f74c68e393811ca25d42aa560.png@f_auto?token=2d1ce3a07dd20950fcfbd169fda77ce9)
+<div>			<!--块级封装-->
+    <center>	<!--将图片和文字居中-->
+    <img src="https://pics5.baidu.com/feed/8644ebf81a4c510f74c68e393811ca25d42aa560.png@f_auto?token=2d1ce3a07dd20950fcfbd169fda77ce9"
+         alt="无法显示图片"
+         style="zoom:100%"/>
+    <br>		<!--换行-->
+    	<!--标题-->
+    </center>
+</div>
+
+
 
 ​		然后“又乘其次，亦以直除”，将左边那列也乘以某个常数（这里乘以3）， 让左列减右列，得到：
 
-​																	![img](https://pics6.baidu.com/feed/c75c10385343fbf28dc245a3ef36258864388f11.png@f_auto?token=8fb10738c45c31eb2f5cfa544d6f11ae)
+<div>			<!--块级封装-->
+    <center>	<!--将图片和文字居中-->
+    <img src="https://pics6.baidu.com/feed/c75c10385343fbf28dc245a3ef36258864388f11.png@f_auto?token=8fb10738c45c31eb2f5cfa544d6f11ae"
+         alt="无法显示图片"
+         style="zoom:100%"/>
+    <br>		<!--换行-->
+    	<!--标题-->
+    </center>
+</div>
 
 ​		然后“以中行中禾不尽者遍乘左行，而以直除”,让左列乘以中列未消去的中间项5，再减去中列各项的某个常数倍（这里取4 倍）得到：
 
-![img](https://pics4.baidu.com/feed/838ba61ea8d3fd1f7d0ea7876806ca1794ca5fdc.png@f_auto?token=a3be10560b596b960cf538eeb008d394)
+<div>			<!--块级封装-->
+    <center>	<!--将图片和文字居中-->
+    <img src="https://pics4.baidu.com/feed/838ba61ea8d3fd1f7d0ea7876806ca1794ca5fdc.png@f_auto?token=a3be10560b596b960cf538eeb008d394"
+         alt="无法显示图片"
+         style="zoom:100%"/>
+    <br>		<!--换行-->
+    	<!--标题-->
+    </center>
+</div>
+
+
 
 ​		经过以上四步变换，左列数字出现了两个零，相当于消去了两个未知数，只剩下36 和99，相当于36z=99。99 除以36，得到z=2.75。
 
