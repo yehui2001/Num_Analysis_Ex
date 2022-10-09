@@ -528,11 +528,11 @@ end
     </center>
 </div>
 
-​		然后让中列每一项减去右列对应项的某个常数倍（这里取 2 倍），矩阵变换成：												![img](https://pics5.baidu.com/feed/8644ebf81a4c510f74c68e393811ca25d42aa560.png@f_auto?token=2d1ce3a07dd20950fcfbd169fda77ce9)
+​		然后让中列每一项减去右列对应项的某个常数倍（这里取 2 倍），矩阵变换成：																		![img](https://pics5.baidu.com/feed/8644ebf81a4c510f74c68e393811ca25d42aa560.png@f_auto?token=2d1ce3a07dd20950fcfbd169fda77ce9)
 
 ​		然后“又乘其次，亦以直除”，将左边那列也乘以某个常数（这里乘以3）， 让左列减右列，得到：
 
-​													![img](https://pics6.baidu.com/feed/c75c10385343fbf28dc245a3ef36258864388f11.png@f_auto?token=8fb10738c45c31eb2f5cfa544d6f11ae)
+​																	![img](https://pics6.baidu.com/feed/c75c10385343fbf28dc245a3ef36258864388f11.png@f_auto?token=8fb10738c45c31eb2f5cfa544d6f11ae)
 
 ​		然后“以中行中禾不尽者遍乘左行，而以直除”,让左列乘以中列未消去的中间项5，再减去中列各项的某个常数倍（这里取4 倍）得到：
 
