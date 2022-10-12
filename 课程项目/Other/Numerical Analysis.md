@@ -1,4 +1,6 @@
-# Numerical Analysis presentation
+
+
+# Numerical Analysis
 
 
 
@@ -7,13 +9,13 @@
 
 
 <center><p align="left"></p> <font size=5 > <b>主讲人：王玉佩，吴旭文</b> </font> <center>
+
 ## Question 1
 
 ### 1.1
 
 ​		Design two nonlinear algebraic equations (degree at least 5 , with no less than 3 zeros) and find all their zeros (error less than 0.001).
 So,we firstly design the quintic algebric equations as follows.
-
 
 $$
 \begin{equation}
@@ -26,12 +28,11 @@ $$
 
 
 
-
 ​		we use the Matlab to print the figure of the equation. 
 
-![y1](G:\Numercial Analysis Exercise\Num_Analysis_Ex\课程项目\Q1\y1.png)
+![y1](https://pic1.imgdb.cn/item/6342e6a416f2c2beb154cf1b.png)
 
-![](G:\Numercial Analysis Exercise\Num_Analysis_Ex\课程项目\Q1\y2.png)
+![y2](https://pic1.imgdb.cn/item/6342e6c116f2c2beb155101e.png)
 
 ### 1.2
 
@@ -86,7 +87,7 @@ end
 
 ​	 We take the derivative of the function, we get the first derivative of the function, and then we determine whether the zero at the first derivative is zero, and if it's zero, then it's the second zero, and so on.
 
-<img src="G:\Numercial Analysis Exercise\Num_Analysis_Ex\课程项目\Q1\dy.png" alt="dy" style="zoom: 80%;" />
+<img src="https://pic1.imgdb.cn/item/6342e6cf16f2c2beb155359b.png" alt="dy" style="zoom: 100%;" />
 
 | $zeros$ | -5.0000 | -3.0000 | -2.5000 | 4.0000 |
 | ------- | ------- | ------- | ------- | ------ |
@@ -311,50 +312,52 @@ x_Nr = x_solve'
 
 ​		(1)Generate matrix $A(50\times50)$ and vector $b(50\times1)$ by using random number，and solve the linear system $AX=b$ by using Gaussian partial pivoting elimination algorithm.
 
-### 3.2
 
-There are two important points:\\
-    1)Generate A nonsingular matrix to make it solvable;\\
+
+There are two important points:
+    1)Generate A nonsingular matrix to make it solvable;
     2)Using sort algorithm to find the partial pivot.
 
 ```matlab
-n=50;
-while(1)
-A=round(rand(n)*99)+1;  %生成n阶方阵，元素取值范围为1-100
-%判断矩阵是否奇异
-if d=det(A)
-    break
+while 1
+    A=round(rand(50)*99)+1;
+    b=round(rand(50,1)*99)+1;
+    T=[A,b];
+    if det(A) && rank(A) == rank(T)
+        break
+    end
 end
-end
-b=round(rand(n,1)*99)+1;  %生成n*1向量，元素取值范围为1-100
-X=[n,1];
-T=[A,b];
-Temp=[n+1,1];   %用作交换两行
+X=[50,1];
+Temp=[51,1];
 
-for i=1:n
-    for j=i+1:n  %选取绝对值最大的为列主元
-        if(abs(T(j,i))>abs(T(i,i)))
-            max=T(j,:);
-            Temp=T(i,:);
-            T(i,:)=T(j,:);
-            T(j,:)=Temp;
+for i=1:50
+    max_line=i;
+    for j=i+1:50  %选取绝对值最大的为列主元
+        if abs(T(j,i)) > abs(T(max_line,i))
+            max_line=j;
         end
     end
     
-    for k=i+1:n  %计算得到上三角矩阵
+    Temp=T(i,:);
+    T(i,:)=T(max_line,:);
+    T(max_line,:)=Temp;
+        
+    for k=i+1:50  
     m_ik=T(k,i)/T(i,i); %计算系数
-    T(k,i+1:n+1)=T(k,i+1:n+1)-(T(i,i+1:n+1).*m_ik);
+    T(k,i+1:51)=T(k,i+1:51)-(T(i,i+1:51).*m_ik);
     T(k,i)=0;
     end
-end  
+end  %得到上三角矩阵
 
-X(n,1)=T(n,n+1)/T(n,n);  %计算x[n,1]
-for i=2:n  %计算x[1:n-1,1]
-    X(n-i+1,1)=(T(n-i+1,n+1)-T(n-i+2,n-i+2:n)*X(n-i+2:n,1))/T(i,i);
+X(50,1)=T(50,51)/T(50,50);
+for i=2:50
+    X(51-i,1)=(T(51-i,51)-T(52-i,52-i:50)*X(52-i:50,1))/T(i,i);
 end
 ```
 
-​		Randomly generate tridiagonal matrix (30 * 30), and use Jacobi iteration and Gauss Seidel iteration to solve them respectively. The error of the solution in terms of norm is required to be less than 1/1000.
+### 3.2
+
+​        (2)Randomly generate tridiagonal matrix (30 * 30), and use Jacobi iteration and Gauss Seidel iteration to solve them respectively. The error of the solution in terms of norm is required to be less than 1/1000.
 
 
 
@@ -362,68 +365,81 @@ end
 
 ​		A strictly diagonally dominant is eligibility.
 
-```matlab
- %创建30阶随机方阵，元素取值1-100
-A=round(rand(30)*99)+1;
-D=zeros(30);
-U=zeros(30);
-L=zeros(30);
-B=round(rand(30,1)*99)+1; 
-    
-%将D-U-L变为严格对角占优矩阵，使得满足迭代条件
-for j=1:29
-    U(j,j+1)=-A(j,j+1);
-    L(j+1,j)=-A(j+1,j);
-end
-D(1,1)=sum(abs(A(1,1:2)))+10*rand(1);
-for i=2:29
-    D(i,i)=sum(abs(A(i,i-1:i+1)))+10*rand(1);
-end
-D(30,30)=sum(abs(A(30,29:30)))+10*rand(1);
+#### Jacobi iteration
 
-T=((D-L)^(-1))*U;
-C=(D-L)^(-1);
-        
-e=max(abs(eig(T)));  %检查系数矩阵特征值
+```matlab
+ while 1
+    %创建30阶随机方阵，元素取值1-100
+    A=round(rand(30)*99)+1;
+    D=zeros(30);
+    U=zeros(30);
+    L=zeros(30);
+    B=round(rand(30,1)*99)+1; 
     
+    %将D-U-L变为严格对角占优矩阵，使得满足迭代条件
+    for j=1:29
+        U(j,j+1)=-A(j,j+1);
+        L(j+1,j)=-A(j+1,j);
+    end
+    
+    D(1,1)=sum(abs(A(1,1:2)))+10*rand(1);
+    for i=2:29
+        D(i,i)=sum(abs(A(i,i-1:i+1)))+10*rand(1);
+    end
+    D(30,30)=sum(abs(A(30,29:30)))+10*rand(1);
+
+    T=(D^-1)*(L+U);
+    if max(abs(eig(T)))<1  %检查系数矩阵特征值
+        break
+    end
+end
+    
+Xn=zeros(30,1);  %存储当前的迭代结果
+Xn_1=ones(30,1);  %存储上一次的迭代结果
+while sqrt(sum(abs(Xn-Xn_1).^2))>0.001 %使用第二范数限制精度
+    Xn_1=Xn;
+    Xn=(D^-1)*(L+U)*Xn_1+(D^-1)*B;
+    fprintf('Xn = %f\n',Xn);
+end
+```
+
+#### Gauss-Seidel iteration
+
+```matlab
+while 1
+%创建30阶随机方阵，元素取值1-100
+    A=round(rand(30)*99)+1;
+    D=zeros(30);
+    U=zeros(30);
+    L=zeros(30);
+    B=round(rand(30,1)*99)+1; 
+    
+%将D-U-L变为对角占优矩阵，使得满足迭代条件
+    for j=1:29
+        U(j,j+1)=-A(j,j+1);
+        L(j+1,j)=-A(j+1,j);
+    end
+    
+    D(1,1)=sum(abs(A(1,1:2)))+10*rand(1);
+    for i=2:29
+        D(i,i)=sum(abs(A(i,i-1:i+1)))+10*rand(1);
+    end
+    D(30,30)=sum(abs(A(30,29:30)))+10*rand(1);
+
+    T=((D-L)^(-1))*U;
+    C=(D-L)^(-1);
+        
+    if max(abs(eig(T)))<1  %检查系数矩阵特征值
+        break
+    end
+end    
 Xn=zeros(30,1);  %存储当前的迭代结果
 Xn_1=ones(30,1);  %存储上一次的迭代结果
 while sqrt(sum(abs(Xn-Xn_1).^2))>0.001
     Xn_1=Xn;
     for j=1:30
-    Xn(j,1)=T(j,:)*Xn+C(j,:)*B;
+        Xn(j,1)=T(j,:)*Xn+C(j,:)*B;
     end
-    fprintf('Xn = %f\n',Xn);
-end
-```
-
-```matlab
-%创建30阶随机方阵，元素取值1-100
-A=round(rand(30)*99)+1;
-D=zeros(30);
-U=zeros(30);
-L=zeros(30);
-B=round(rand(30,1)*99)+1; 
-    
-%将D-U-L变为对角占优矩阵，使得满足迭代条件
-for j=1:29
-    U(j,j+1)=-A(j,j+1);
-    L(j+1,j)=-A(j+1,j);
-end
-D(1,1)=sum(abs(A(1,1:2)))+10*rand(1);
-for i=2:29
-    D(i,i)=sum(abs(A(i,i-1:i+1)))+10*rand(1);
-end
-D(30,30)=sum(abs(A(30,29:30)))+10*rand(1);
-
-T=(D^-1)*(L+U);
-e=max(abs(eig(T)));  %检查系数矩阵特征值
-    
-Xn=zeros(30,1);  %存储当前的迭代结果
-Xn_1=ones(30,1);  %存储上一次的迭代结果
-while sqrt(sum(abs(Xn-Xn_1).^2))>0.001
-    Xn_1=Xn;
-    Xn=(D^-1)*(L+U)*Xn_1+(D^-1)*B;
     fprintf('Xn = %f\n',Xn);
 end
 ```
@@ -439,6 +455,8 @@ Use appropriate polynomial interpolation to approximate the following ellipse.
 It's useful that using Spline Interpolation for the curve which is differentiable.But
     (1)There are some point whose derivative are infinity for $f(x)$.We can divide the cuvre into several parts which includes one special point at least.And exchanging independent variable and dependent variable make some special points differentiable.
     (2)Some points are nondifferentiable but continuous,thay can be the endpoints.
+
+#### (1)$x^2+y^2=5^2$;
 
 ```matlab
 %对上下两段插值
@@ -459,9 +477,9 @@ xx2=spline(y_i,x2,yy_i);
 plot(xx_i,yy1,xx_i,yy2,xx1,yy_i,xx2,yy_i);
 ```
 
-<img src="G:\Numercial Analysis Exercise\Num_Analysis_Ex\课程项目\Other\圆.png" alt="圆" style="zoom:15%;" />
+<img src="https://pic1.imgdb.cn/item/6339a58816f2c2beb184d367.png" alt="圆" style="zoom:15%;" />
 
-
+#### (2)$\rho(\theta)=2(1-sin\theta)$(心形线).
 
 ```matlab
 theta_1=0:pi/36:pi/2;
@@ -505,7 +523,7 @@ rho=2.*(1-sin(theta));
 end
 ```
 
-<img src="G:\Numercial Analysis Exercise\Num_Analysis_Ex\课程项目\Other\心脏线.png" alt="心脏线" style="zoom:15%;" />
+<img src="https://pic1.imgdb.cn/item/6339a6d816f2c2beb187a711.png" alt="心脏线" style="zoom:15%;" />
 
 ## Question 5
 
@@ -513,9 +531,20 @@ end
 
 ​	原始矩阵如下：
 
-![img](https://pics2.baidu.com/feed/cb8065380cd79123d75d6cc6c37cb68ab3b78090.png@f_auto?token=25e2e668ae51685e4eba1525cbe39528)
+<div>			<!--块级封装-->
+    <center>	<!--将图片和文字居中-->
+    <img src="https://pics2.baidu.com/feed/cb8065380cd79123d75d6cc6c37cb68ab3b78090.png@f_auto?token=25e2e668ae51685e4eba1525cbe39528"
+         alt="无法显示图片"
+         style="zoom:100%"/>
+    <br>		<!--换行-->
+    	<!--标题-->
+    </center>
+</div>
 
-​		《九章算术》里记载的第一步变换是“以 右行上禾，遍乘中行”，也就是用右列第一项的数字 3，去乘中间那列的每一项。 乘过以后，原始矩阵变换如下:
+
+
+
+《九章算术》里记载的第一步变换是“以 右行上禾，遍乘中行”，也就是用右列第一项的数字 3，去乘中间那列的每一项。 乘过以后，原始矩阵变换如下:
 
 <div>			<!--块级封装-->
     <center>	<!--将图片和文字居中-->
@@ -527,18 +556,51 @@ end
     </center>
 </div>
 
-​		然后让中列每一项减去右列对应项的某个常数倍（这里取 2 倍），矩阵变换成：																		![img](https://pics5.baidu.com/feed/8644ebf81a4c510f74c68e393811ca25d42aa560.png@f_auto?token=2d1ce3a07dd20950fcfbd169fda77ce9)
+​		然后让中列每一项减去右列对应项的某个常数倍（这里取 2 倍），矩阵变换成：
+
+<div>			<!--块级封装-->
+    <center>	<!--将图片和文字居中-->
+    <img src="https://pics5.baidu.com/feed/8644ebf81a4c510f74c68e393811ca25d42aa560.png@f_auto?token=2d1ce3a07dd20950fcfbd169fda77ce9"
+         alt="无法显示图片"
+         style="zoom:100%"/>
+    <br>		<!--换行-->
+    	<!--标题-->
+    </center>
+</div>
+
+
+
 
 ​		然后“又乘其次，亦以直除”，将左边那列也乘以某个常数（这里乘以3）， 让左列减右列，得到：
 
-​																	![img](https://pics6.baidu.com/feed/c75c10385343fbf28dc245a3ef36258864388f11.png@f_auto?token=8fb10738c45c31eb2f5cfa544d6f11ae)
+<div>			<!--块级封装-->
+    <center>	<!--将图片和文字居中-->
+    <img src="https://pics6.baidu.com/feed/c75c10385343fbf28dc245a3ef36258864388f11.png@f_auto?token=8fb10738c45c31eb2f5cfa544d6f11ae"
+         alt="无法显示图片"
+         style="zoom:100%"/>
+    <br>		<!--换行-->
+    	<!--标题-->
+    </center>
+</div>
+
 
 ​		然后“以中行中禾不尽者遍乘左行，而以直除”,让左列乘以中列未消去的中间项5，再减去中列各项的某个常数倍（这里取4 倍）得到：
 
-![img](https://pics4.baidu.com/feed/838ba61ea8d3fd1f7d0ea7876806ca1794ca5fdc.png@f_auto?token=a3be10560b596b960cf538eeb008d394)
+<div>			<!--块级封装-->
+    <center>	<!--将图片和文字居中-->
+    <img src="https://pics4.baidu.com/feed/838ba61ea8d3fd1f7d0ea7876806ca1794ca5fdc.png@f_auto?token=a3be10560b596b960cf538eeb008d394"
+         alt="无法显示图片"
+         style="zoom:100%"/>
+    <br>		<!--换行-->
+    	<!--标题-->
+    </center>
+</div>
 
-​		经过以上四步变换，左列数字出现了两个零，相当于消去了两个未知数，只剩下36 和99，相当于36z=99。99 除以36，得到z=2.75。
+
+
+
+​				经过以上四步变换，左列数字出现了两个零，相当于消去了两个未知数，只剩下36 和99，相当于36z=99。99 除以36，得到z=2.75。
 
 ​		沿用前面的变换方法继续消元，并代入求解，得到x=9.25，y=4.25，方程组被完整求解。
 
-​		This method is Gaussian Elimination Method 
+​				This method is Gaussian Elimination Method 
