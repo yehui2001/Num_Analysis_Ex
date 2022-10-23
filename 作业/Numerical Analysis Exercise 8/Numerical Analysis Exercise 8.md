@@ -1,6 +1,7 @@
 # Numerical Analysis Exercise 8
 
 #### 1. A natural cubic spline S on [0,2], is defined by
+
 $$
 S(x)=\left\{\begin{array}{l}
 S_{0}(x)=2 x^{3}-3 x+4, \quad 0 \leq x \leq 1 \\
@@ -12,7 +13,13 @@ Find a,b and c.
 
 **Solution:** 	$ S(1) = S_0(1) = 2-3+4 = 3 = S_1(1) $
 
-When $x\in[1,2]$,  the $x-1\in [0,1]$ ,so we get 
+Due to the natural cubic spline S, So we have the Solutions as follows:
+$$
+W
+
+
+$$
+
 
 
 
