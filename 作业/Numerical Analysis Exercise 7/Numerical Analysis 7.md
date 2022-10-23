@@ -121,7 +121,7 @@ So the  $f(x) = P(x) = -0.8x^3+4.8x^2-8.8x + 7.8$
 
 The image of the interpolation function is as follows,
 
-![](D:\Documents\Num_Analysis_Ex\作业\Numerical Analysis Exercise 7\fig1.png)
+![](https://pic1.imgdb.cn/item/6354f16f16f2c2beb119630e.png)
 
 $f(1.5) =2.7000 ,f(1.2) = 2.7696$
 
