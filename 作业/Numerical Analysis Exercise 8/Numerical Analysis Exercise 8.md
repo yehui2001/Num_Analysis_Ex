@@ -14,11 +14,22 @@ Find a,b and c.
 
 When $x\in[1,2]$,  the $x-1\in [0,1]$ ,so we get 
 
-
-
-
-
-
+$$
+\left\{\begin{array}{l}
+s_0=s_1(1) \\
+s_0'(1)=s_1'(1) \\
+s_0''(1)=s_1''(1) \\
+s_0''(0)=s_1''(2)=0
+\end{array}\right.
+$$
+So we find that
+$$
+\left\{\begin{array}{l}
+a=-2 \\
+b=6 \\
+c=3
+\end{array}\right.
+$$
 
 #### 2.Curve fitting:
 
@@ -36,7 +47,16 @@ Find the power fits $y = Ax^2$ and $y = Bx^3$ for the following data and use $E_
 
 
 
-|      |      |      |      |      |      |
-| ---- | ---- | ---- | ---- | ---- | ---- |
-|      |      |      |      |      |      |
+| $x_k$ | 2.0  | 2.3  | 2.6  | 2.9  | 3.2  |
+| :---: | :--: | :--: | :--: | :--: | :--: |
+| $y_k$ | 5.9  | 8.3  | 10.7 | 13.7 | 17.0 |
 
+![fig1](/Users/lev1s/Documents/code/yehui/Num_Analysis_Ex/作业/Numerical Analysis Exercise 8/fig1.jpg)
+
+Find the exponential fit $y=Ce^{Ax}$ for the following data.
+
+| $x_k$ |  0   | 0.15  | 0.31  |  0.5  |  0.6  | 0.75  |
+| :---: | :--: | :---: | :---: | :---: | :---: | :---: |
+| $y_k$ | 1.0  | 1.004 | 1.031 | 1.117 | 1.223 | 1.422 |
+
+![fig2](/Users/lev1s/Documents/code/yehui/Num_Analysis_Ex/作业/Numerical Analysis Exercise 8/fig2.jpg)

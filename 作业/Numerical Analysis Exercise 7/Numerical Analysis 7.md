@@ -119,9 +119,7 @@ we get the $a_3 = -0.8,a_2 = 4.8, a_1 = -8.8, a_0 = 7.8$.
 
 So the  $f(x) = P(x) = -0.8x^3+4.8x^2-8.8x + 7.8$
 
-The image of the interpolation function is as follows,
-
-![](https://pic1.imgdb.cn/item/6354f16f16f2c2beb119630e.png)
+The image of the interpolation function is as follows,<img src="/Users/lev1s/Documents/code/yehui/Num_Analysis_Ex/作业/Numerical Analysis Exercise 7/fig2.png" alt="fig2" style="zoom:75%;" />
 
 $f(1.5) =2.7000 ,f(1.2) = 2.7696$
 
@@ -159,12 +157,12 @@ $$
 
 **Solution:**
 
-| $x_i$ | $f[]$ | $f[,]$ | $f[]$ | $f[,,,]$ | $f[,,,,]$ |
-| ----- | ----- | ------ | ----- | -------- | --------- |
-| 4.5   |       |        |       |          |           |
-| 7.5   |       |        |       |          |           |
+| $x_i$ | $f[,]$ | $f[,,]$ | $f[,,,]$ | $f[,,,,]$ |
+| :---: | :----: | :-----: | :------: | :-------: |
+|  4.5  | 2.1181 | 2.1209  |  2.1209  |  2.1204   |
+|  7.5  | 2.8264 | 2.7275  |  2.7287  |  2.7282   |
 
 ##### (4) Compare the values in part(3) with the actual function value of $f(x)$.
 
-
+Result already showed.
 

@@ -1,0 +1,30 @@
+x1=[2 2.3 2.6 2.9 3.2];
+y1=[5.1 7.5 10.6 14.4 19];
+%% 
+f=fittype('a*x^3','independent','x','coefficients',{'a'});
+cfun=fit(x1',y1',f,'startpoint',1)
+xi=min(x1):0.02:max(x1);
+yi=cfun(xi);
+plot(xi,yi,'b-',x1,y1,'r*');
+set(gca,'YGrid','on','GridColor',[0.5,0.5,0.15])
+y_t=cfun(x1);
+error=y1'-y_t;
+mse_t=(mean(error.^2))^(0.5)
+%% 
+f=fittype('a*x^2','independent','x','coefficients',{'a'});
+cfun=fit(x',y',f,'startpoint',1)
+xi=min(x):0.02:max(x);
+yi=cfun(xi);
+plot(xi,yi,'b-',x,y,'r*');
+y_t=cfun(x);
+error=y'-y_t;
+mse_t=(mean(error.^2))^(0.5)
+%% 
+f=fittype('a*exp(b*x)','independent','x','coefficients',{'a','b'});
+cfun=fit(x',y',f,'startpoint',[0,0])
+xi=min(x):0.02:max(x);
+yi=cfun(xi);
+plot(xi,yi,'b-',x,y,'r*');
+y_t=cfun(x);
+error=y'-y_t;
+mse_t=(mean(error.^2))^(0.5)
